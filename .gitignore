@@ -1,0 +1,6 @@
+*.[oa]
+*~
+*.bak
+~*
+wp-config.php
+wp-content/uploads

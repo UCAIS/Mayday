@@ -1,0 +1,2335 @@
+# Translation of Multisite in Chinese (China)
+# This file is distributed under the same license as the Multisite package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2011-07-04 17:29-0500\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Multisite\n"
+"POT-Creation-Date: \n"
+"Last-Translator: Jiehan Zheng <zheng@jiehan.org>\n"
+"Language-Team: \n"
+
+#: wp-admin/includes/ms.php:514
+msgid "If you reached this screen by accident and meant to visit one of your own sites, here are some shortcuts to help you find your way."
+msgstr "若您是意外看到本页面的，同时希望访问您所拥有的站点，如下快捷链接或许可以帮助到您。"
+
+#: wp-includes/ms-functions.php:1307
+msgid ""
+"Dear User,\n"
+"\n"
+"Your new SITE_NAME site has been successfully set up at:\n"
+"BLOG_URL\n"
+"\n"
+"You can log in to the administrator account with the following information:\n"
+"Username: USERNAME\n"
+"Password: PASSWORD\n"
+"Log in here: BLOG_URLwp-login.php\n"
+"\n"
+"We hope you enjoy your new site. Thanks!\n"
+"\n"
+"--The Team @ SITE_NAME"
+msgstr ""
+"尊敬的用户，\n"
+"\n"
+"您的 SITE_NAME 站点配置成功，地址为：\n"
+"BLOG_URL\n"
+"\n"
+"您可以使用以下管理员帐户信息进行登录：\n"
+"用户名：USERNAME\n"
+"密码：PASSWORD\n"
+"在此登录：BLOG_URLwp-login.php\n"
+"\n"
+"希望您喜欢。谢谢！\n"
+"\n"
+"-- SITE_NAME 管理组"
+
+#: wp-admin/network/user-new.php:46
+msgid "Cannot add user."
+msgstr "无法添加用户。"
+
+#: wp-admin/network/site-users.php:161
+#: wp-admin/network/site-settings.php:72
+#: wp-admin/network/site-info.php:82
+#: wp-admin/network/site-themes.php:128
+msgid "Edit Site: <a href=\"%1$s\">%2$s</a>"
+msgstr "编辑站点：<a href=\"%1$s\">%2$s</a>"
+
+#: wp-admin/network/sites.php:37
+msgid "Clicking on bold headings can re-sort this table."
+msgstr "点击粗体的标题可对列表进行重新排序。"
+
+#: wp-admin/network/index.php:29
+msgid "The Right Now box provides the network administrator with links to the screens to either create a new site or user, or to search existing users and sites. Screen for Sites and Users are also accessible through the left-hand navigation in the Network Admin section."
+msgstr "“概况”模块向网络管理员提供了添加新站点、创建新用户，以及搜索现有用户和站点的链接。这些功能也可通过左侧的导航菜单中的“网络管理员”区域访问到。"
+
+#: wp-admin/network/user-new.php:21
+msgid "Add User will set up a new user account on the network and send that person an email with username and password."
+msgstr "“添加用户”将在网络中创建用户帐户，并自动向该人发送包含用户名和密码的电子邮件。"
+
+#: wp-admin/network/themes.php:181
+msgid "Themes can be enabled on a site by site basis by the network admin on the Edit Site screen (which has a Themes tab); get there via the Edit action link on the All Sites screen. Only network admins are able to install or edit themes."
+msgstr "在“编辑站点”的“主题”选项卡，您可以为每个站点设置不同的主题。通过“所有站点”页面上相应站点的“编辑”链接可以找到这个选项卡。只有网络管理员有权安装和编辑主题。"
+
+#: wp-admin/network/upgrade.php:22
+msgid "Only use this screen once you have updated to a new version of WordPress through Updates/Available Updates (via the Network Administration navigation menu or the Admin Bar). Clicking the Update Network button will step through each site in the network, five at a time, and make sure any database updates are applied."
+msgstr "请先在“更新”或“可用更新”页面（通过“网络管理”导航菜单或“管理工具条”来进入）上升级到最新 WordPress 版本，然后再使用本页面。点击“升级网络”按钮，WordPress 将自动依次升级网络中的所有站点（5 个一次），并保证所有站点的数据库处于最新结构。"
+
+#: wp-admin/network.php:109
+msgid "The next screen for Network Setup will give you individually-generated lines of code to add to your wp-config.php and .htaccess files. Make sure the settings of your FTP client make files starting with a dot visible, so that you can find .htaccess; you may have to create this file if it really is not there. Make backup copies of those two files."
+msgstr "在“配置网络”的下一个页面，WordPress 将向您提供专为您生成的几行代码，请将它们按要求加入到 wp-config.php 和 .htaccess 文件中。请确保您的 FTP 客户端不隐藏以点（.）开头的文件，这样您才能看到 .htaccess 文件；若它确实不存在，您需手工创建这个文件。请在对文件作出更改前，备份这两个文件。"
+
+#: wp-admin/network/menu.php:77
+msgid "Available Updates"
+msgstr "可用更新"
+
+#: wp-admin/network/menu.php:17
+msgid "All Sites"
+msgstr "所有站点"
+
+#: wp-admin/network/menu.php:33
+msgid "Installed Themes"
+msgstr "已安装的主题"
+
+#: wp-admin/network/menu.php:52
+msgid "Network Settings"
+msgstr "网络设置"
+
+#: wp-activate.php:92
+msgid "Your account is now activated. <a href=\"%1$s\">Log in</a> or go back to the <a href=\"%2$s\">homepage</a>."
+msgstr "您的账户激活成功。<a href=\"%1$s\">现在登录</a>，或<a href=\"%2$s\">返回首页</a>。"
+
+#: wp-admin/network/settings.php:31
+msgid "Super admins can no longer be added on the Options screen. You must now go to the list of existing users on Network Admin > Users and click on Username or the Edit action link below that name. This goes to an Edit User page where you can check a box to grant super admin privileges."
+msgstr "现在已经不能在设置页面添加超级管理员了。您需前往“管理网络” > “用户”，然后点击相应的用户名，或其下的编辑链接。之后您可在用户编辑页面为用户授予超级管理员权限。"
+
+#: wp-admin/network.php:111
+msgid "Once you add this code and refresh your browser, multisite should be enabled. This screen will keep an archive of the added code. You can toggle between Network Admin and Site Admin by clicking on the Howdy (Username) dropdown in the upper right of the administration area."
+msgstr "在您添加完代码后，请在浏览器刷新页面，之后多站点功能就应该启用了。这个页面将为您存档添加了的代码。您可通过管理区域右上角的“您好，【用户名】”菜单，在“管理网络”和“管理站点”之间切换。"
+
+#: wp-activate.php:90
+msgid "Your account is now activated. <a href=\"%1$s\">View your site</a> or <a href=\"%2$s\">Log in</a>"
+msgstr "您的帐户现已激活。<a href=\"%1$s\">查看您的站点</a>或<a href=\"%2$s\">登录</a>"
+
+#: wp-admin/includes/ms.php:511
+#: wp-admin/includes/ms.php:513
+msgid "You attempted to access the \"%1$s\" dashboard, but you do not currently have privileges on this site. If you believe you should be able to access the \"%1$s\" dashboard, please contact your network administrator."
+msgstr "您试图访问“%1$s”的控制板，但在该站点上权限不足。若您确信您应该拥有访问“%1$s”的控制板的权限，请联系站点网络管理员。"
+
+#: wp-admin/includes/ms.php:525
+msgid "Visit Dashboard"
+msgstr "访问控制板"
+
+#: wp-admin/includes/ms.php:516
+msgid "Your Sites"
+msgstr "您的站点"
+
+#: wp-admin/includes/ms.php:525
+msgid "View Site"
+msgstr "查看站点"
+
+#: wp-admin/my-sites.php:45
+msgid "<a href=\"http://codex.wordpress.org/Dashboard_My_Sites_Screen\" target=\"_blank\">Documentation on My Sites</a>"
+msgstr "<a href=\"http://codex.wordpress.org/zh-cn:%E6%8E%A7%E5%88%B6%E6%9D%BF_%E6%88%91%E7%9A%84%E7%AB%99%E7%82%B9%E9%A1%B5%E9%9D%A2\" target=\"_blank\">关于我的站点的中文文档</a>"
+
+#: wp-admin/network.php:115
+msgid "<a href=\"http://codex.wordpress.org/Tools_Network_Screen\" target=\"_blank\">Documentation on the Network Screen</a>"
+msgstr "<a href=\"http://codex.wordpress.org/zh-cn:%E5%B7%A5%E5%85%B7_%E7%BD%91%E7%BB%9C%E9%A1%B5%E9%9D%A2\" target=\"_blank\">关于网络页面的中文文档</a>"
+
+#: wp-admin/network/themes.php:210
+msgctxt "network"
+msgid "Theme deleted."
+msgid_plural "%s themes deleted."
+msgstr[0] "%s 个主题已删除。"
+
+#: wp-admin/network/user-new.php:25
+#: wp-admin/network/index.php:32
+#: wp-admin/network/site-users.php:32
+#: wp-admin/network/site-settings.php:27
+#: wp-admin/network/site-new.php:24
+#: wp-admin/network/users.php:42
+#: wp-admin/network/sites.php:40
+#: wp-admin/network/site-info.php:27
+#: wp-admin/network/site-themes.php:32
+msgid "<a href=\"http://wordpress.org/support/forum/multisite/\" target=\"_blank\">Support Forums</a>"
+msgstr "<a href=\"http://zh-cn.forums.wordpress.org/forum/multisite\" target=\"_blank\">支持论坛</a>"
+
+#: wp-admin/network/themes.php:142
+msgid "Yes, Delete this theme"
+msgid_plural "Yes, Delete these themes"
+msgstr[0] "确定，删除这些主题"
+
+#: wp-admin/network/themes.php:128
+msgid "You are about to remove the following theme:"
+msgid_plural "You are about to remove the following themes:"
+msgstr[0] "您将删除下列主题："
+
+#: wp-admin/network/themes.php:145
+msgid "No, Return me to the theme list"
+msgstr "不，回到主题列表"
+
+#: wp-admin/network/themes.php:214
+msgid "You cannot delete a theme while it is active on the main site."
+msgstr "您不能删除主站点正在使用的主题。"
+
+#: wp-admin/network/themes.php:125
+msgid "Delete Theme"
+msgid_plural "Delete Themes"
+msgstr[0] "删除主题"
+
+#: wp-admin/network/themes.php:81
+msgid "You do not have sufficient permissions to delete themes for this site."
+msgstr "您无权为此站点删除主题。"
+
+#: wp-admin/network/themes.php:127
+msgid "This theme may be active on other sites in the network."
+msgid_plural "These themes may be active on other sites in the network."
+msgstr[0] "这些主题可能正在本网络中的其它站点中使用着。"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:291
+msgid "Delete this theme"
+msgstr "删除这个主题"
+
+#: wp-admin/network/themes.php:133
+msgid "Are you sure you wish to delete these themes?"
+msgstr "您确定要删除这些主题吗？"
+
+#: wp-admin/network/site-users.php:26
+#: wp-admin/network/site-settings.php:21
+#: wp-admin/network/site-info.php:21
+#: wp-admin/network/site-themes.php:26
+msgid "<strong>Info</strong> - The domain and path are rarely edited as this can cause the site to not work properly. The Registered date and Last Updated date are displayed. Network admins can mark a site as archived, spam, deleted and mature, to remove from public listings or disable."
+msgstr "<strong>信息</strong> - 通常情况下，请不要变更域名和路径，因为这样做经常会引发问题。注册日期和最近更新日期亦在此处显示；网络管理员还可以在此设定站点的状态：存档、删除、标为垃圾或成人内容，还可以从公共列表中删除或停用某站点。"
+
+#: wp-admin/network/site-users.php:28
+#: wp-admin/network/site-settings.php:23
+#: wp-admin/network/site-info.php:23
+#: wp-admin/network/site-themes.php:28
+msgid "<strong>Themes</strong> - This area shows themes that are not already enabled across the network. Enabling a theme in this menu makes it accessible to this site. It does not activate the theme, but allows it to show in the site&#8217;s Appearance menu. To enable a theme for the entire network, see the <a href=\"%s\">Network Themes</a> screen."
+msgstr "<strong>主题</strong> - 此区域显示那些没有在整个网络启用的主题。在此启用某个主题，该站点就可拥有使用此主题的特权。但该站点不会立即更换为您指定的主题，您选择的主题会出现在站点的“外观”菜单中。要为整个网络启用主题，请访问<a href=\"%s\">网络主题</a>页面。"
+
+#: wp-admin/network/menu.php:74
+msgid "Updates"
+msgstr "更新"
+
+#: wp-admin/network/themes.php:183
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Themes_Screen\" target=\"_blank\">Documentation on Network Themes</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Themes_Screen\" target=\"_blank\">关于网络主题的文档</a>（英文）"
+
+#: wp-admin/network/upgrade.php:26
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Updates_Screen\" target=\"_blank\">Documentation on Update Network</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Updates_Screen\" target=\"_blank\">关于升级网络的文档</a>（英文）"
+
+#: wp-admin/network.php:114
+msgid "<a href=\"http://codex.wordpress.org/Create_A_Network\" target=\"_blank\">Documentation on Creating a Network</a>"
+msgstr "<a href=\"http://codex.wordpress.org/zh-cn:%E5%88%9B%E5%BB%BA%E7%AB%99%E7%82%B9%E7%BD%91%E7%BB%9C\" target=\"_blank\">关于创建网络的文档</a>"
+
+#: wp-admin/network/site-users.php:27
+#: wp-admin/network/site-settings.php:22
+#: wp-admin/network/site-info.php:22
+#: wp-admin/network/site-themes.php:27
+msgid "<strong>Users</strong> - This displays the users associated with this site. You can also change their role, reset their password, or remove them from the site. Removing the user from the site does not remove the user from the network."
+msgstr "<strong>用户</strong> - 显示属于该站点的用户。您可变更用户角色、重设用户密码，或从站点中删除用户。删除操作只影响该站点，用户并不会在网络中被移除。"
+
+#: wp-admin/network/index.php:31
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin\" target=\"_blank\">Documentation on the Network Admin</a>"
+msgstr "<a href=\"http://codex.wordpress.org/zh-cn:%E7%AB%99%E7%82%B9%E7%BD%91%E7%BB%9C%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2\" target=\"_blank\">关于管理网络的文档</a>"
+
+#: wp-admin/network/settings.php:33
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Settings_Screen\" target=\"_blank\">Documentation on Network Settings</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Settings_Screen\" target=\"_blank\">关于网络设置的文档</a>（英文）"
+
+#: wp-admin/network/user-new.php:24
+#: wp-admin/network/users.php:41
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">Documentation on Network Users</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">关于网络上用户的文档</a>（英文）"
+
+#: wp-admin/network/menu.php:29
+msgid "Themes %s"
+msgstr "主题 %s"
+
+#: wp-admin/network/site-users.php:31
+#: wp-admin/network/site-settings.php:26
+#: wp-admin/network/site-new.php:23
+#: wp-admin/network/sites.php:39
+#: wp-admin/network/site-info.php:26
+#: wp-admin/network/site-themes.php:31
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Sites_Screens\" target=\"_blank\">Documentation on Site Management</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Sites_Screens\" target=\"_blank\">关于站点管理的文档</a>（英文）"
+
+#: wp-admin/network/site-new.php:20
+msgid "This screen is for Super Admins to add new sites to the network. This is not affected by the registration settings."
+msgstr "此页面供超级管理员向网络添加站点使用。在这里添加站点不受站点注册策略的限制。"
+
+#: wp-admin/network/site-users.php:25
+#: wp-admin/network/site-settings.php:20
+#: wp-admin/network/site-info.php:20
+#: wp-admin/network/site-themes.php:25
+msgid "The menu is for editing information specific to individual sites, particularly if the admin area of a site is unavailable."
+msgstr "本菜单用于为特定站点编辑信息。此功能在某站点后台出现问题时尤为有用。"
+
+#: wp-admin/network/site-users.php:29
+#: wp-admin/network/site-settings.php:24
+#: wp-admin/network/site-info.php:24
+#: wp-admin/network/site-themes.php:29
+msgid "<strong>Settings</strong> - This page shows a list of all settings associated with this site. Some are created by WordPress and others are created by plugins you activate. Note that some fields are grayed out and say Serialized Data. You cannot modify these values due to the way the setting is stored in the database."
+msgstr "<strong>设置</strong> - 此页面显示站点的所有设置选项。设置选项可能由 WordPress 创建，也有可能来自您使用（或使用过）的插件。某些选项可能是灰色的，上书“序列化的数据”（Serialized Data），出于它们在数据库中的特殊储存方式，您不能编辑这些内容。"
+
+#: wp-includes/ms-functions.php:930
+msgid "The user is already active."
+msgstr "此用户已经处于启用状态了。"
+
+#: wp-admin/network/site-users.php:242
+msgid "You may add from existing network users, or set up a new user to add to this site."
+msgstr "您可从网络中现有的用户中选择并添加，或新建一个用户账户。"
+
+#: wp-admin/network/site-users.php:240
+msgid "Add User to This Site"
+msgstr "向此站点添加用户"
+
+#: wp-admin/network/site-users.php:244
+msgid "You may add from existing network users to this site."
+msgstr "您可从网络中选择用户，并将其加入站点。"
+
+#: wp-admin/network.php:343
+#: wp-admin/network.php:345
+msgid "<strong>Caution:</strong> We recommend you back up your existing <code>wp-config.php</code> and <code>%s</code> files."
+msgstr "<strong>注意：</strong>我们强烈建议您备份您当前的 <code>wp-config.php</code> 文件和 <code>%s</code> 文件。"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:236
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:283
+msgid "Network Enable"
+msgstr "在整个网络启用"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:238
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:285
+msgid "Network Disable"
+msgstr "在整个网络停用"
+
+#: wp-signup.php:87
+msgid "Your address will be %s."
+msgstr "您的地址将是 %s。"
+
+#: wp-signup.php:86
+msgid "domain"
+msgstr "域名"
+
+#: wp-admin/network/settings.php:105
+msgid "Allow site administrators to add new users to their site via the \"Users &rarr; Add New\" page."
+msgstr "允许站点管理员通过子站点的“用户 &rarr; 添加新用户”页面添加新用户。"
+
+#: wp-admin/network/sites.php:99
+#: wp-admin/network/menu.php:18
+msgctxt "site"
+msgid "Add New"
+msgstr "创建站点"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:201
+msgctxt "themes"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "全部 <span class=\"count\">(%s)</span>"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:204
+msgid "Enabled <span class=\"count\">(%s)</span>"
+msgid_plural "Enabled <span class=\"count\">(%s)</span>"
+msgstr[0] "当前启用 <span class=\"count\">(%s)</span>"
+
+#: wp-admin/includes/class-wp-ms-users-list-table.php:97
+msgid "Super Admin <span class=\"count\">(%s)</span>"
+msgid_plural "Super Admins <span class=\"count\">(%s)</span>"
+msgstr[0] "超级管理员 <span class=\"count\">(%s)</span>"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:238
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:285
+msgid "Disable"
+msgstr "停用"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:337
+msgid "Visit Theme Site"
+msgstr "访问主题站点"
+
+#: wp-admin/network/site-themes.php:22
+msgid "You do not have sufficient permissions to manage themes for this site."
+msgstr "您无权管理此站点的主题。"
+
+#: wp-admin/network/themes.php:22
+msgid "You do not have sufficient permissions to manage network themes."
+msgstr "您无权管理网络的主题。"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:170
+msgid "No themes found."
+msgstr "未找到主题。"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:172
+msgid "You do not appear to have any themes available at this time."
+msgstr "似乎您还没有可以使用的主题。"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:288
+msgid "Open this theme in the Theme Editor"
+msgstr "使用主题编辑器打开此主题"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:285
+msgid "Disable this theme"
+msgstr "停用这个主题"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:283
+msgid "Enable this theme"
+msgstr "启用这个主题"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:337
+msgid "Visit theme homepage"
+msgstr "访问主题首页"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:207
+msgid "Disabled <span class=\"count\">(%s)</span>"
+msgid_plural "Disabled <span class=\"count\">(%s)</span>"
+msgstr[0] "当前停用 <span class=\"count\">(%s)</span>"
+
+#: wp-admin/network/themes.php:212
+#: wp-admin/network/site-themes.php:161
+msgid "No theme selected."
+msgstr "没有选择主题。"
+
+#: wp-admin/network/themes.php:207
+#: wp-admin/network/site-themes.php:159
+msgid "Theme disabled."
+msgid_plural "%s themes disabled."
+msgstr[0] "%s 个主题已停用。"
+
+#: wp-admin/network/themes.php:204
+#: wp-admin/network/site-themes.php:156
+msgid "Theme enabled."
+msgid_plural "%s themes enabled."
+msgstr[0] "%s 个主题已启用。"
+
+#: wp-admin/network/site-users.php:214
+msgid "Enter the username and email."
+msgstr "输入用户名和电子邮件地址。"
+
+#: wp-admin/network/site-users.php:211
+msgid "User created."
+msgstr "用户已创建。"
+
+#: wp-admin/network/site-users.php:202
+msgid "Select a user to change role."
+msgstr "选择要更改哪位用户的权限。"
+
+#: wp-admin/network/site-users.php:208
+msgid "Select a user to remove."
+msgstr "选择要删除的用户。"
+
+#: wp-admin/network/site-users.php:193
+msgid "User is already a member of this site."
+msgstr "用户已是此站点上的成员。"
+
+#: wp-admin/network/site-users.php:196
+msgid "Enter the username of an existing user."
+msgstr "输入现有用户的用户名。"
+
+#: wp-admin/network/sites.php:61
+msgid "You do not have permission to delete that site."
+msgstr "您无权删除此站点。"
+
+#: wp-admin/network/edit.php:204
+msgid "You are not allowed to delete the site."
+msgstr "您不能删除此站点。"
+
+#: wp-admin/network/edit.php:42
+msgid "Warning! User %s cannot be deleted."
+msgstr "警告！用户 %s 不可删除。"
+
+#: wp-admin/network/settings.php:240
+msgid "Language Settings"
+msgstr "语言设置"
+
+#: wp-admin/network/site-themes.php:164
+msgid "Network enabled themes are not shown on this screen."
+msgstr "网络上启用的主题不会显示在本页面。"
+
+#: wp-admin/network/user-new.php:17
+msgid "You do not have sufficient permissions to add users to this network."
+msgstr "您无权在网络中添加用户。"
+
+#: wp-admin/network/themes.php:176
+#: wp-admin/network/site-themes.php:125
+msgctxt "themes per page (screen options)"
+msgid "Themes"
+msgstr "主题"
+
+#: wp-admin/network.php:145
+msgid "The constant DO_NOT_UPGRADE_GLOBAL_TABLES cannot be defined when creating a network."
+msgstr "创建网络时，您不可以定义 DO_NOT_UPGRADE_GLOBAL_TABLES 常量。"
+
+#: wp-admin/network/user-new.php:98
+#: wp-admin/network/site-users.php:270
+msgid "Add User"
+msgstr "添加用户"
+
+#: wp-admin/network/sites.php:32
+msgid "Dashboard leads to the Dashboard for that site."
+msgstr "“控制板”，带您访问该站点的控制板。"
+
+#: wp-admin/network/sites.php:34
+msgid "Delete which is a permanent action after the confirmation screens."
+msgstr "“删除”是个永久性的操作，站点将在确认后删除。"
+
+#: wp-admin/network/site-users.php:175
+#: wp-admin/network/site-settings.php:88
+#: wp-admin/network/site-info.php:98
+#: wp-admin/network/site-themes.php:142
+msgid "Info"
+msgstr "信息"
+
+#: wp-admin/network/site-info.php:78
+msgid "Site info updated."
+msgstr "站点信息已更新。"
+
+#: wp-admin/network/site-users.php:38
+#: wp-admin/network/site-settings.php:33
+#: wp-admin/network/site-info.php:33
+#: wp-admin/network/site-themes.php:49
+msgid "Invalid site ID."
+msgstr "站点 ID 无效。"
+
+#: wp-admin/network/site-users.php:17
+#: wp-admin/network/site-settings.php:17
+#: wp-admin/network/site-info.php:17
+msgid "You do not have sufficient permissions to edit this site."
+msgstr "您无权编辑此站点。"
+
+#: wp-admin/network/site-settings.php:68
+msgid "Site options updated."
+msgstr "站点设置已更新。"
+
+#: wp-admin/network/site-users.php:162
+#: wp-admin/network/site-settings.php:73
+#: wp-admin/network/site-info.php:83
+#: wp-admin/network/site-themes.php:129
+msgid "Edit Site: %s"
+msgstr "编辑站点：%s"
+
+#: wp-admin/network/themes.php:196
+#: wp-admin/network/menu.php:34
+msgctxt "theme"
+msgid "Add New"
+msgstr "添加主题"
+
+#: wp-admin/network/sites.php:28
+msgid "Add New takes you to the Add New Site screen. You can search for a site by Name, ID number, or IP address. Screen Options allows you to choose how many sites to display on one page."
+msgstr "“添加新站点”链接将带您到添加新站点的页面。在这里，您可以通过名称、ID 或 IP 地址搜索某站点。在显示选项中，您可修改每页显示的站点数目。"
+
+#: wp-admin/network/site-new.php:98
+#: wp-admin/network/site-new.php:107
+msgid "Add New Site"
+msgstr "添加站点"
+
+#: wp-admin/network/site-new.php:17
+msgid "You do not have sufficient permissions to add sites to this network."
+msgstr "您无权在本网络上添加站点。"
+
+#: wp-admin/network/menu.php:46
+msgctxt "plugin editor"
+msgid "Add New"
+msgstr "添加插件"
+
+#: wp-admin/network/sites.php:25
+msgctxt "sites per page (screen options)"
+msgid "Sites"
+msgstr "站点"
+
+#: wp-admin/network/sites.php:31
+msgid "An Edit link to a separate Edit Site screen."
+msgstr "“编辑”链接，带您前往“编辑站点”页面。"
+
+#: wp-admin/network.php:354
+msgid "Create a <code>blogs.dir</code> directory at <code>%s/blogs.dir</code>. This directory is used to store uploaded media for your additional sites and must be writeable by the web server."
+msgstr "将 <code>blogs.dir</code> 目录新建于 <code>%s/blogs.dir</code>。该目录用于存放其他站点上传的多媒体文件，因此网页服务器需要拥有写权限。"
+
+#: wp-includes/ms-functions.php:527
+msgid "Only lowercase letters (a-z) and numbers are allowed."
+msgstr "只能使用小写字母（a-z）和数字。"
+
+#: wp-activate.php:66
+msgid "Your account has been activated. You may now <a href=\"%1$s\">log in</a> to the site using your chosen username of &#8220;%2$s&#8221;.  Please check your email inbox at %3$s for your password and login instructions. If you do not receive an email, please check your junk or spam folder. If you still do not receive an email within an hour, you can <a href=\"%4$s\">reset your password</a>."
+msgstr "您的账户已启用。您现在可以使用用户名“%2$s”<a href=\"%1$s\">登录</a>到您的站点。请查收 %3$s 的邮件，以获取密码和相关步骤。如果您没有收到邮件，请检查垃圾邮件文件夹。若一小时后仍然没有收到邮件，请<a href=\"%4$s\">重置您的密码</a>。"
+
+#: wp-includes/ms-load.php:238
+msgid "Read the <a target=\"_blank\" href=\"http://codex.wordpress.org/Debugging_a_WordPress_Network\">bug report</a> page. Some of the guidelines there may help you figure out what went wrong."
+msgstr "请访问 <a target=\"_blank\" href=\"http://codex.wordpress.org/Debugging_a_WordPress_Network\">bug 报告</a>页面（英文）。也许能帮助您找出问题的原因。"
+
+#: wp-includes/ms-functions.php:839
+#: wp-includes/ms-functions.php:890
+msgid "[%1$s] Activate %2$s"
+msgstr "[%1$s] 激活 %2$s"
+
+#: wp-includes/ms-load.php:213
+msgid "No site defined on this host. If you are the owner of this site, please check <a href=\"http://codex.wordpress.org/Debugging_a_WordPress_Network\">Debugging a WordPress Network</a> for help."
+msgstr "本主机未配置站点。若您是本站点的管理员，请访问<a href=\"http://codex.wordpress.org/Debugging_a_WordPress_Network\">调试 WordPress 网络</a>（英文）以寻求帮助。"
+
+#: wp-admin/includes/ms.php:35
+msgid "This file is too big. Files must be less than %1$s KB in size."
+msgstr "文件过大。每个文件的大小不应超过 %1$s KB。"
+
+#: wp-admin/network/edit.php:52
+msgid "What should be done with posts and links owned by <em>%s</em>?"
+msgstr "如何处理 <em>%s</em> 的文章和链接？"
+
+#: wp-admin/network/edit.php:45
+msgid "Warning! User cannot be deleted. The user %s is a network admnistrator."
+msgstr "警告！用户不可删除。%s 是网络的管理员。"
+
+#: wp-admin/network/edit.php:29
+msgid "Transfer or delete posts and links before deleting users."
+msgstr "在删除用户之前转移或删除文章和链接。"
+
+#: wp-admin/includes/ms.php:40
+msgid "Back"
+msgstr "返回"
+
+#: wp-admin/includes/ms.php:37
+msgid "You have used your space quota. Please delete files before uploading."
+msgstr "您已用完储存空间配额。请在上传之前先删除些文件。"
+
+#: wp-admin/network/edit.php:405
+msgid "Warning! User cannot be modified. The user %s is a network administrator."
+msgstr "警告！无法修改 %s，该用户是网络管理员。"
+
+#: wp-admin/includes/ms.php:33
+msgid "Not enough space to upload. %1$s KB needed."
+msgstr "上传空间不足。还需 %1$s KB。"
+
+#: wp-admin/network/edit.php:70
+msgid "Site: %s"
+msgstr "站点：%s"
+
+#: wp-admin/includes/ms.php:221
+msgid ""
+"Dear user,\n"
+"\n"
+"You recently requested to have the administration email address on\n"
+"your site changed.\n"
+"If this is correct, please click on the following link to change it:\n"
+"###ADMIN_URL###\n"
+"\n"
+"You can safely ignore and delete this email if you do not want to\n"
+"take this action.\n"
+"\n"
+"This email has been sent to ###EMAIL###\n"
+"\n"
+"Regards,\n"
+"All at ###SITENAME###\n"
+"###SITEURL### "
+msgstr ""
+"亲爱的用户，\n"
+"\n"
+"您近期提交了一个更改管理电子邮件地址的请求。\n"
+"请点击下列链接来进行更改：\n"
+"###ADMIN_URL###\n"
+"\n"
+"若您不想进行操作，只需忽略并删除本邮件。\n"
+"\n"
+"本电子邮件发送给 ###EMAIL###\n"
+"\n"
+"  此至\n"
+"敬礼！\n"
+"###SITENAME### 全体\n"
+"###SITEURL###"
+
+#: wp-admin/includes/ms.php:242
+msgid "[%s] New Admin Email Address"
+msgstr "[%s] 新的管理电子邮件地址"
+
+#: wp-admin/includes/ms.php:258
+msgid "<strong>ERROR</strong>: The e-mail address isn't correct."
+msgstr "<strong>错误</strong>：此电子邮件地址不正确。"
+
+#: wp-admin/includes/ms.php:263
+msgid "<strong>ERROR</strong>: The e-mail address is already used."
+msgstr "<strong>错误</strong>：此电子邮件地址已经在使用了。"
+
+#: wp-admin/includes/ms.php:275
+msgid ""
+"Dear user,\n"
+"\n"
+"You recently requested to have the email address on your account changed.\n"
+"If this is correct, please click on the following link to change it:\n"
+"###ADMIN_URL###\n"
+"\n"
+"You can safely ignore and delete this email if you do not want to\n"
+"take this action.\n"
+"\n"
+"This email has been sent to ###EMAIL###\n"
+"\n"
+"Regards,\n"
+"All at ###SITENAME###\n"
+"###SITEURL###"
+msgstr ""
+"亲爱的用户，\n"
+"\n"
+"您最近提交了更改账户电子邮件地址的请求。\n"
+"点击下面链接以确认：\n"
+"###ADMIN_URL###\n"
+"\n"
+"若您不想更改电子邮件地址，您只需忽略并删除本电子邮件。\n"
+"\n"
+"本电子邮件应被送至 ###EMAIL###\n"
+"\n"
+"  此至\n"
+"敬礼\n"
+"###SITENAME### 全体\n"
+"###SITEURL###"
+
+#: wp-admin/includes/ms.php:295
+msgid "[%s] New Email Address"
+msgstr "[%s] 新电子邮件地址"
+
+#: wp-admin/includes/ms.php:303
+msgid "Your email address has not been updated yet. Please check your inbox at %s for a confirmation email."
+msgstr "您的电子邮件地址还未被更新。请在 %s 查收确认邮件。"
+
+#: wp-admin/includes/ms.php:413
+msgid "GB"
+msgstr "GB"
+
+#: wp-admin/includes/ms.php:416
+msgid "MB"
+msgstr "MB"
+
+#: wp-admin/includes/ms.php:419
+msgid "Used: %1s%% of %2s"
+msgstr "已使用：%2s 中的 %1s%%"
+
+#: wp-admin/includes/ms.php:556
+msgid "British English"
+msgstr "英式英语"
+
+#: wp-admin/includes/ms.php:566
+msgid "English"
+msgstr "英语"
+
+#: wp-admin/includes/ms.php:586
+msgid "Warning! WordPress encrypts user cookies, but you must add the following lines to <strong>wp-config.php</strong> for it to be more secure."
+msgstr "警告！WordPress 加密用户的 cookie，但是您必须在 <strong>wp-config.php</strong> 添加如下内容，才能使其工作，带来更强的安全性。"
+
+#: wp-admin/includes/ms.php:587
+msgid "Before the line <code>/* That's all, stop editing! Happy blogging. */</code> please add this code:"
+msgstr "在 <code>/* That's all, stop editing! Happy blogging. */ 或 /* 好了！请不要再继续编辑。请保存本文件。使用愉快！ */</code> 一行之前添加如下代码："
+
+#: wp-admin/includes/ms.php:600
+msgid "Thank you for Updating! Please visit the <a href=\"%s\">Update Network</a> page to update all your sites."
+msgstr "多谢更新！请访问<a href=\"%s\">升级网络</a>页面以升级您的所有站点。"
+
+#: wp-admin/includes/ms.php:633
+msgid "Primary Site"
+msgstr "主站点"
+
+#: wp-admin/includes/ms.php:552
+msgid "American English"
+msgstr "美式英语"
+
+#: wp-admin/includes/ms.php:432
+msgid "MB (Leave blank for network default)"
+msgstr "MB（留空则使用网络默认值）"
+
+#: wp-admin/includes/ms.php:431
+msgid "Site Upload Space Quota "
+msgstr "站点上传大小配额"
+
+#: wp-admin/includes/ms.php:680
+msgid "The <code>%1$s</code> file is deprecated. Please remove it and update your server rewrite rules to use <code>%2$s</code> instead."
+msgstr "<code>%1$s</code> 文件已不被建议使用。请将其移除，然后更新您服务器的 rewrite 规则，使用 <code>%2$s</code> 替代。"
+
+#: wp-admin/network/settings.php:25
+msgid "Dashboard Site is an option to give a site to users who do not have a site on the system. Their default role is Subscriber, but that default can be changed. The Admin Notice Feed can provide a notice on all dashboards of the latest post via RSS or Atom, or provide no such notice if left blank."
+msgstr "控制板站点是没有站点的用户看到的页面。它们的默认角色是“订阅者”，您也可以修改为其它角色。管理通知 feed 中可以填写 RSS 或 Atom 地址，之后，所有站点都将显示指定的地址中的最新文章，留空则不使用管理通知功能。"
+
+#: wp-admin/network/site-new.php:21
+msgid "If the admin email for the new site does not exist in the database, a new user will also be created."
+msgstr "若新站点填写的管理员电子邮件地址在网络中不存在，新用户也将一并被创建。"
+
+#: wp-admin/network/sites.php:33
+msgid "Deactivate, Archive, and Spam which lead to confirmation screens. These actions can be reversed later."
+msgstr "点击“停用”、“存档”和“垃圾站点”，则自动跳转至确认页面。这些操作是可逆的。"
+
+#: wp-admin/network/sites.php:36
+msgid "The site ID is used internally, and is not shown on the front end of the site or to users/viewers."
+msgstr "站点 ID 是内部使用的，不会在站点前台显示给用户或访客。"
+
+#: wp-admin/network/sites.php:30
+msgid "Hovering over each site reveals seven options (three for the primary site):"
+msgstr "将鼠标移至站点上方，会出现 7 个选项（主站点则出现 3 个）："
+
+#: wp-admin/network.php:110
+msgid "Add a <code>blogs.dir</code> directory under <code>/wp-content</code> and add the designated lines of code to wp-config.php (just before <code>/*...stop editing...*/</code>) and <code>.htaccess</code> (replacing the existing WordPress rules)."
+msgstr "在 <code>/wp-content</code> 下新建 <code>blogs.dir</code> 目录，并加入如下内容到 wp-config.php（在 <code>/*...stop editing...*/ 或 /*...停止编辑...*/</code> 之前）和 <code>.htaccess</code>（替换 WordPress 原来生成的内容）。"
+
+#: wp-admin/network.php:107
+msgid "This screen allows you to configure a network as having subdomains (<code>site1.example.com</code>) or subdirectories (<code>example.com/site1</code>). Subdomains require wildcard subdomains to be enabled in Apache and DNS records, if your host allows it."
+msgstr "您可以在本页面配置使用子域名（<code>site1.example.com</code>）或子目录（<code>example.com/site1</code>）的网络。若使用子域名，您需要在 Apache 和 DNS 记录中启用泛域名。"
+
+#: wp-admin/network/settings.php:24
+msgid "Operational settings has fields for the network&#8217;s name and admin email."
+msgstr "运营设置包括网络的名称以及管理员邮件地址栏目。"
+
+#: wp-admin/network/users.php:36
+msgid "You can also go to the user&#8217;s profile page by clicking on the individual username."
+msgstr "您也可以通过点击用户的名字，访问其资料页。"
+
+#: wp-admin/network/users.php:38
+msgid "The bulk action will permanently delete selected users, or mark/unmark those selected as spam. Spam users will have posts removed and will be unable to sign up again with the same email addresses."
+msgstr "批量操作将永久删除选中的用户，或标记/取消标记选择的用户为垃圾用户。垃圾用户的发布的文章将被删除，并无法再使用原电子邮件地址注册。"
+
+#: wp-admin/network/settings.php:28
+msgid "Upload settings control the size of the uploaded files and the amount of available upload space for each site. You can change the default value for specific sites when you edit a particular site. Allowed file types are also listed (space separated only)."
+msgstr "上传设置控制每个站点所能上传的文件数目、大小和文件类型（用空格隔开）。您也可以对每个站点做出不同的限制。"
+
+#: wp-admin/my-sites.php:43
+msgid "Up until WordPress version 3.0, what is now called a Multi-site Network had to be installed separately as WordPress MU (multi-user)."
+msgstr "自从 WordPress 3.0 版本起，原先需要单独安装的的 WordPress MU（多用户）现在已成为了“多站点网络”。"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:180
+msgid "Theme"
+msgstr "主题"
+
+#: wp-admin/network/index.php:28
+msgid "Blogs are now called Sites; Site is now called Network."
+msgstr "“博客”变为“站点”；原“站点”现在是“网络”。"
+
+#: wp-admin/network/index.php:27
+msgid "Site Admin is now Super Admin (we highly encourage you to get yourself a cape!)."
+msgstr "“站点管理员”变为“超级管理员”"
+
+#: wp-includes/ms-load.php:232
+msgid "If you are the owner of this network please check that MySQL is running properly and all tables are error free."
+msgstr "若您是本站点的管理员，请检查 MySQL 是否在正常运行，且相关数据表是否均无错误。"
+
+#: wp-includes/ms-load.php:231
+msgid "If your site does not display, please contact the owner of this network."
+msgstr "若您的站点显示不正常，请联系站点管理员。"
+
+#: wp-admin/includes/class-wp-ms-users-list-table.php:76
+msgctxt "user"
+msgid "Not Spam"
+msgstr "不是垃圾用户"
+
+#: wp-admin/includes/class-wp-ms-users-list-table.php:75
+msgctxt "user"
+msgid "Mark as Spam"
+msgstr "标记为垃圾用户"
+
+#: wp-admin/network.php:153
+msgid "Once the network is created, you may reactivate your plugins."
+msgstr "网络创建后，您可以重新启用这些插件。"
+
+#: wp-admin/network/sites.php:35
+msgid "Visit to go to the frontend site live."
+msgstr "点击“访问”可进入该站点的前台。"
+
+#: wp-admin/network.php:347
+msgid "<strong>Caution:</strong> We recommend you back up your existing <code>wp-config.php</code> file."
+msgstr "<strong>注意：</strong>我们强烈建议您备份您当前的 <code>wp-config.php</code> 文件。"
+
+#: wp-admin/network/index.php:26
+msgid "Until WordPress 3.0, running multiple sites required using WordPress MU instead of regular WordPress. In version 3.0, these applications have merged. If you are a former MU user, you should be aware of the following changes:"
+msgstr "自 WordPress 3.0 起，WordPress MU 已与 WordPress 合并。若您之前在使用 MU，请注意如下变化："
+
+#: wp-admin/network/settings.php:29
+msgid "Checkboxes for media upload buttons set which are shown in the visual editor. If unchecked, a generic upload button is still visible; other media types can still be uploaded if on the allowed file types list."
+msgstr "下面几个复选框控制多媒体文件上传，它们将体现在可视化编辑器中。若不选，“通用类型”的上传按钮依然会显示，用户可以上传您在文件类型列表中限定的文件。"
+
+#: wp-admin/network/settings.php:27
+msgid "New site settings are defaults applied when a new site is created in the network. These include welcome email for when a new site or user account is registered, and what&#8127;s put in the first post, page, comment, comment author, and comment URL."
+msgstr "新站点设置是对于未来注册的站点的默认值。包含“欢迎”电子邮件、首篇文章、首篇评论、首个页面的内容。"
+
+#: wp-admin/network/themes.php:179
+msgid "This screen enables and disables the inclusion of themes available to choose in the Appearance menu for each site. It does not activate or deactivate which theme a site is currently using."
+msgstr "本页面设置每个站点的“外观”菜单中，可供用户选择的主题。不能停用站点正在使用的主题。"
+
+#: wp-admin/my-sites.php:42
+msgid "This screen shows an individual user all of their sites in this network, and also allows that user to set a primary site. He or she can use the links under each site to visit either the frontend or the dashboard for that site."
+msgstr "此屏幕向用户展示他们在网络中的所有站点，并允许用户设置一个主站点。用户可以点击相应的链接，进入某个站点的前台或控制板。"
+
+#: wp-admin/network/themes.php:180
+msgid "If the network admin disables a theme that is in use, it can still remain selected on that site. If another theme is chosen, the disabled theme will not appear in the site&#8217;s Appearance > Themes screen."
+msgstr "若网络管理员禁用了正在使用的主题，在该站点上，这个主题将依然可用。一旦这位用户选择了其它主题，那么用户就无法再选择回来了。"
+
+#: wp-admin/network/settings.php:23
+msgid "This screen sets and changes options for the network as a whole. The first site is the main site in the network and network options are pulled from that original site&#8217;s options."
+msgstr "在本页面可对整个网络的设置进行修改。第一个站点是网络中的主站点，网络的设置从原始站点的设置中继承。"
+
+#: wp-admin/network/settings.php:26
+msgid "Registration settings can disable/enable public signups. If you let others sign up for a site, install spam plugins. Spaces, not commas, should separate names banned as sites for this network."
+msgstr "注册选项可控制公众注册。如果您允许其他人注册，建议您安装防垃圾内容（spam）的插件。您可以指定一些不允许作为站点名称的词语，用空格隔开（请注意不是逗号）。"
+
+#: wp-admin/network/settings.php:30
+msgid "Menu setting enables/disables the plugin menus from appearing for non super admins, so that only super admins, not site admins, have access to activate plugins."
+msgstr "菜单设置允许您选择一般用户是否有权自行控制插件。"
+
+#: wp-admin/network/sites.php:29
+msgid "This is the main table of all sites on this network. Switch between list and excerpt views by using the icons above the right side of the table."
+msgstr "这是本网络中所有站点的列表。您可通过点击列表上方的按钮，在“列表视图”和“摘要视图”模式间切换。"
+
+#: wp-admin/network/user-new.php:22
+msgid "Users who are signed up to the network without a site are added as subscribers to the main or primary dashboard site, giving them profile pages to manage their accounts. These users will only see Dashboard and My Sites in the main navigation until a site is created for them."
+msgstr "在网络中注册，且不拥有站点的用户将以订阅者的身份加入主控制板站点，允许他们在其中修改资料、管理自己的账户。在他们创建自己的站点之前，只能在导航栏中看到“控制板”和“我的站点”菜单。"
+
+#: wp-admin/network/users.php:37
+msgid "You can sort the table by clicking on any of the bold headings and switch between list and excerpt views by using the icons in the upper right."
+msgstr "您可以通过点击加粗的表头来对项目进行排序。有上方的图标可在“列表视图”和“摘要视图”间切换。"
+
+#: wp-admin/network/users.php:35
+msgid "Hover over any user on the list to make the edit links appear. The Edit link on the left will take you to his or her Edit User profile page; the Edit link on the right by any site name goes to an Edit Site screen for that site."
+msgstr "将鼠标移至用户的上方，将出现编辑链接。左侧的编辑链接是编辑用户信息的；而右侧的编辑链接用于编辑其所属站点的信息。"
+
+#: wp-admin/network/upgrade.php:24
+msgid "If this process fails for any reason, users logging in to their sites will force the same update."
+msgstr "若更新的过程因故中断或失败，登录站点的用户将被要求继续进行更新。"
+
+#: wp-admin/network/upgrade.php:23
+msgid "If a version update to core has not happened, clicking this button won&#8217;t affect anything."
+msgstr "若您没有升级 WordPress 核心，点击这个按钮是不会起任何作用的。"
+
+#: wp-admin/network/users.php:34
+msgid "This table shows all users across the network and the sites to which they are assigned."
+msgstr "本表格列出网络中的所有用户，以及它们所在的站点。"
+
+#: wp-admin/network/users.php:39
+msgid "You can make an existing user an additional super admin by going to the Edit User profile page and checking the box to grant that privilege."
+msgstr "您可将现有的用户设为超级管理员，方法是：在编辑用户资料的页面，点击选框以赋予该用户权限。"
+
+#: wp-admin/network.php:108
+msgid "Choose subdomains or subdirectories; this can only be switched afterwards by reconfiguring your install. Fill out the network details, and click install. If this does not work, you may have to add a wildcard DNS record (for subdomains) or change to another setting in Permalinks (for subdirectories)."
+msgstr "选择子域名或子目录；一旦安装完成不可更改，除非重新配置您的安装。填写网络详情，再点击安装。若不起作用，您可能必须添加泛域名记录（用于子域名）或更换固定链接（使用子目录）。"
+
+#: wp-admin/network.php:112
+msgid "The choice of subdirectory sites is disabled if this setup is more than a month old because of permalink problems with &#8220;/blog/&#8221; from the main site. This disabling will be addressed soon in a future version."
+msgstr "若本站点已经安装超过一个月了，由于主站点“/blog/”固定链接的问题，您将不能选择使用子目录。此问题将很快在未来版本中解决。"
+
+#: wp-admin/network/site-new.php:44
+msgid "The following words are reserved for use by WordPress functions and cannot be used as blog names: <code>%s</code>"
+msgstr "下列名称由 WordPress 自身功能占用，因此不能作为博客名称：<code>%s</code>"
+
+#: wp-admin/network/upgrade.php:61
+msgid "Warning! Problem updating %1$s. Your server may not be able to connect to sites running on it. Error message: <em>%2$s</em>"
+msgstr "警告！更新 %1$s 时出错。您的服务器可能无法连接到运行着的站点。错误消息：<em>%2$s</em>"
+
+#: wp-signup.php:391
+msgctxt "Multisite active signup type"
+msgid "user"
+msgstr "允许注册用户"
+
+#: wp-signup.php:390
+msgctxt "Multisite active signup type"
+msgid "blog"
+msgstr "允许注册博客"
+
+#: wp-signup.php:389
+msgctxt "Multisite active signup type"
+msgid "none"
+msgstr "不允许任何类型的注册"
+
+#: wp-signup.php:388
+msgctxt "Multisite active signup type"
+msgid "all"
+msgstr "允许所有类型的注册"
+
+#: wp-admin/network.php:252
+#: wp-admin/network.php:262
+#: wp-admin/network.php:269
+msgid "The main site in a sub-directory install will need to use a modified permalink structure, potentially breaking existing links."
+msgstr "要在主站点为子目录的情况下安装，需要修改固定链接结构，有可能会破坏已有的链接。"
+
+#: wp-admin/network.php:268
+msgid "Because your install is not new, the sites in your WordPress network must use sub-domains."
+msgstr "由于您当前的安装不是全新的，所以您 WordPress 网络中的站点只能使用子域名。"
+
+#: wp-admin/network.php:474
+msgid "Add the following to your <code>web.config</code> file in <code>%s</code>, replacing other WordPress rules:"
+msgstr "在 <code>%s</code> 中的 <code>web.config</code> 添加下列内容，覆盖掉其他 WordPress 规则。"
+
+#: wp-admin/network.php:184
+#: wp-admin/network.php:356
+msgid "Networks may not be fully compatible with custom wp-content directories."
+msgstr "网络可能不与自定义 wp-content 目录完全兼容。"
+
+#: wp-admin/network.php:216
+msgid "Sub-domains"
+msgstr "子域名"
+
+#: wp-admin/network.php:220
+msgid "Sub-directories"
+msgstr "子目录"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:127
+msgctxt "site"
+msgid "Mark as Spam"
+msgstr "标记为垃圾站点"
+
+#: wp-signup.php:435
+msgid "Sorry, new registrations are not allowed at this time."
+msgstr "抱歉，暂时不允许新用户注册。"
+
+#: wp-signup.php:365
+msgid "Check your inbox at <strong>%s</strong> and click the link given."
+msgstr "检查您的 <strong>%s</strong> 收件箱并点击其中链接。"
+
+#: wp-signup.php:371
+msgid "Wait a little longer. Sometimes delivery of email can be delayed by processes outside of our control."
+msgstr "再等一会儿。可能是因为在我们系统之外的邮件网络堵塞。"
+
+#: wp-signup.php:372
+msgid "Check the junk or spam folder of your email client. Sometime emails wind up there by mistake."
+msgstr "检查您电子邮件客户端的垃圾邮件文件夹。可能它们产生了误判。"
+
+#: wp-signup.php:394
+msgid "Greetings Site Administrator! You are currently allowing &#8220;%s&#8221; registrations. To change or disable registration go to your <a href=\"%s\">Options page</a>."
+msgstr "您好，站点管理员！您当前的设置%s。要更改或完全禁止注册，请访问<a href=\"%s\">选项页面</a>。"
+
+#: wp-signup.php:373
+msgid "Have you entered your email correctly?  You have entered %s, if it&#8217;s incorrect, you will not receive your email."
+msgstr "检查您的邮箱地址是否输入正确？您输入的是 %s，若不正确，那么您就收不到那封邮件。"
+
+#: wp-signup.php:102
+msgid "Allow my site to appear in search engines like Google, Technorati, and in public listings around this network."
+msgstr "允许我的站点出现在 Google、Technorati 等搜索引擎，以及本网络的一些公开列表中。"
+
+#: wp-signup.php:141
+msgid "We send your registration email to this address. (Double-check your email address before continuing.)"
+msgstr "我们将向这个地址发送确认邮件。（因此请在继续前，再次确认电子邮件地址）"
+
+#: wp-admin/network.php:511
+msgid "Once you complete these steps, your network is enabled and configured. You will have to log in again."
+msgstr "完成这些步骤后，您的网络就已被配置妥当并启用了。您将需要重新登录。"
+
+#: wp-admin/network.php:267
+msgid "Sub-domain Install"
+msgstr "子域名安装"
+
+#: wp-admin/network.php:153
+msgid "Please <a href=\"%s\">deactivate your plugins</a> before enabling the Network feature."
+msgstr "启用网络功能之前，请先<a href=\"%s\">停用您的插件</a>。"
+
+#: wp-includes/ms-default-constants.php:113
+msgid "The constant <code>VHOST</code> <strong>is deprecated</strong>. Use the boolean constant <code>SUBDOMAIN_INSTALL</code> in wp-config.php to enable a subdomain configuration. Use is_subdomain_install() to check whether a subdomain configuration is enabled."
+msgstr "<code>VHOST</code> 常量<strong>已不被建议使用</strong>。请在 wp-config.php 使用布尔型常量 <code>SUBDOMAIN_INSTALL</code> 以启用子域名配置。使用 is_subdomain_install() 函数可检查子域名配置是否启用。"
+
+#: wp-includes/ms-default-constants.php:115
+msgid "<strong>Conflicting values for the constants VHOST and SUBDOMAIN_INSTALL.</strong> The value of SUBDOMAIN_INSTALL will be assumed to be your subdomain configuration setting."
+msgstr "<strong>VHOST 和 SUBDOMAIN_INSTALL 的设置相冲突。</strong>将自动使用 SUBDOMAIN_INSTALL 的值作为子域名配置的设置。"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:236
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:283
+msgid "Enable"
+msgstr "启用"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:232
+msgctxt "%1$s: site name. %2$s: site tagline."
+msgid "%1$s &#8211; <em>%2$s</em>"
+msgstr "%1$s &#8211; <em>%2$s</em>"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:148
+#: wp-admin/network/site-info.php:138
+msgctxt "site"
+msgid "Registered"
+msgstr "注册于"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:128
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:258
+msgctxt "site"
+msgid "Not Spam"
+msgstr "不是垃圾站点"
+
+#: wp-admin/includes/class-wp-ms-users-list-table.php:117
+msgctxt "user"
+msgid "Registered"
+msgstr "注册于"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:255
+msgctxt "verb; site"
+msgid "Archive"
+msgstr "存档"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:173
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:260
+#: wp-admin/network/site-info.php:149
+msgctxt "site"
+msgid "Spam"
+msgstr "垃圾站点"
+
+#: wp-includes/ms-load.php:236
+msgid "<strong>Could not find site <code>%1$s</code>.</strong> Searched for table <code>%2$s</code> in database <code>%3$s</code>. Is that right?"
+msgstr "<strong>无法找到 <code>%1$s</code> 站点。</strong>在数据库 <code>%3$s</code> 中搜索了 <code>%2$s</code> 表，以上正确吗？"
+
+#: wp-includes/ms-load.php:227
+msgid "Error establishing database connection"
+msgstr "数据库连接错误"
+
+#: wp-includes/ms-load.php:234
+msgid "<strong>Database tables are missing.</strong> This means that MySQL is not running, WordPress was not installed properly, or someone deleted <code>%s</code>. You really should look at your database now."
+msgstr "<strong>数据表缺失。</strong>有可能是因为 MySQL 未启用、WordPress 未正确安装，或有人删除了 <code>%s</code>。有必要现在进行检查。"
+
+#: wp-includes/ms-functions.php:1116
+msgid ""
+"New Site: %1s\n"
+"URL: %2s\n"
+"Remote IP: %3s\n"
+"\n"
+"Disable these notifications: %4s"
+msgstr ""
+"新站点：%1s\n"
+"地址：%2s\n"
+"远端 IP：%3s\n"
+"\n"
+"禁用这类提醒消息：%4s"
+
+#: wp-includes/ms-functions.php:691
+msgid "Sorry, that site already exists!"
+msgstr "抱歉，此站点已存在！"
+
+#: wp-includes/ms-functions.php:829
+msgid ""
+"To activate your blog, please click the following link:\n"
+"\n"
+"%s\n"
+"\n"
+"After you activate, you will receive *another email* with your login.\n"
+"\n"
+"After you activate, you can visit your site here:\n"
+"\n"
+"%s"
+msgstr ""
+"要激活您的博客，请点击下面链接：\n"
+"\n"
+"%s\n"
+"\n"
+"激活完成之后，您会收到包含登录信息的*另一封电子邮件*。\n"
+"\n"
+"与之同时，您将可以在这里访问您的站点：\n"
+"\n"
+"%s"
+
+#: wp-includes/ms-functions.php:1123
+msgid "New Site Registration: %s"
+msgstr "有新站点注册：%s"
+
+#: wp-includes/ms-functions.php:663
+msgid "Sorry, site names may not contain the character &#8220;_&#8221;!"
+msgstr "抱歉，站点名称不可包含“_”字符！"
+
+#: wp-includes/ms-functions.php:649
+msgid "Please enter a site name"
+msgstr "请输入站点名称"
+
+#: wp-includes/ms-functions.php:1343
+msgid "New %1$s Site: %2$s"
+msgstr "新 %1$s 站点：%2$s"
+
+#: wp-includes/ms-functions.php:1057
+msgid "Site already exists."
+msgstr "站点已存在。"
+
+#: wp-includes/ms-functions.php:932
+msgid "The site is already active."
+msgstr "此站点已经是启用的了。"
+
+#: wp-includes/ms-functions.php:660
+msgid "Site name must be at least 4 characters"
+msgstr "站点名称至少 4 个字符长"
+
+#: wp-includes/ms-functions.php:1063
+msgid "Could not create site."
+msgstr "无法创建站点。"
+
+#: wp-includes/ms-functions.php:680
+msgid "Please enter a site title"
+msgstr "请输入站点标题"
+
+#: wp-includes/ms-functions.php:673
+msgid "Sorry, site names must have letters too!"
+msgstr "抱歉，站点名称还应包含字母！"
+
+#: wp-includes/ms-functions.php:667
+msgid "Sorry, you may not use that site name."
+msgstr "抱歉，您不可使用该站点名称。"
+
+#: wp-includes/ms-functions.php:695
+msgid "Sorry, that site is reserved!"
+msgstr "抱歉，此站点被保留！"
+
+#: wp-includes/ms-functions.php:706
+msgid "That site is currently reserved but may be available in a couple days."
+msgstr "此站点当前被保留，或许几天后可以供公开使用。"
+
+#: wp-includes/ms-functions.php:324
+msgid "Error: problem creating site entry."
+msgstr "错误：创建条目错误。"
+
+#: wp-includes/ms-functions.php:317
+msgid "Error: Site URL already taken."
+msgstr "错误：站点地址已被占用。"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:120
+msgid "No sites found."
+msgstr "未找到站点。"
+
+#: wp-includes/ms-load.php:101
+msgid "This site has been archived or suspended."
+msgstr "站点已被存档或挂起。"
+
+#: wp-includes/ms-settings.php:124
+msgid "No site by that name on this system."
+msgstr "系统中没有该名字的站点。"
+
+#: wp-includes/ms-load.php:211
+msgid "That site does not exist. Please try <a href=\"%s\">%s</a>."
+msgstr "站点不存在。请尝试 <a href=\"%s\">%s</a>。"
+
+#: wp-includes/ms-functions.php:1829
+msgid "You have been added to this site. Please visit the <a href=\"%s\">homepage</a> or <a href=\"%s\">login</a> using your username and password."
+msgstr "您已成功加入此站点。您可访问<a href=\"%s\">首页</a>或使用您的用户名和密码进行<a href=\"%s\">登录</a>。"
+
+#: wp-includes/ms-functions.php:1827
+msgid "An error occurred adding you to this site. Back to the <a href=\"%s\">homepage</a>."
+msgstr "添加您到此站点时发生错误。返回<a href=\"%s\">首页</a>。"
+
+#: wp-includes/ms-functions.php:1829
+msgid "Success"
+msgstr "成功"
+
+#: wp-includes/ms-functions.php:1751
+msgid "This file is too big. Files must be less than %d KB in size."
+msgstr "文件过大。文件大小应小于 %d KB。"
+
+#: wp-activate.php:68
+msgid "Your site at <a href=\"%1$s\">%2$s</a> is active. You may now log in to your site using your chosen username of &#8220;%3$s&#8221;.  Please check your email inbox at %4$s for your password and login instructions.  If you do not receive an email, please check your junk or spam folder.  If you still do not receive an email within an hour, you can <a href=\"%5$s\">reset your password</a>."
+msgstr "您在 <a href=\"%1$s\">%2$s</a> 的站点已启用。您现在可以用用户名“%3$s”登录到您的站点。请查收 %4$s 电子邮件以获取密码和相关步骤。如果您没有收到邮件，请检查垃圾邮件文件夹。如果您一小时后仍然没有收到邮件，请<a href=\"%5$s\">重置您的密码</a>。 "
+
+#: wp-signup.php:87
+msgid "Must be at least 4 characters, letters and numbers only. It cannot be changed, so choose carefully!"
+msgstr "至少 4 字符长，且仅可使用字母和数字。选定后不可更改，请您谨慎选择！"
+
+#: wp-signup.php:407
+msgid "You must first <a href=\"%s\">log in</a>, and then you can create a new site."
+msgstr "您需要先<a href=\"%s\">登录</a>，才可以创建新站点。"
+
+#: wp-signup.php:437
+msgid "You are logged in already. No need to register again!"
+msgstr "您已登录，无需重新注册！"
+
+#: wp-signup.php:173
+msgid "Welcome back, %s. By filling out the form below, you can <strong>add another site to your account</strong>. There is no limit to the number of sites you can have, so create to your heart&#8217;s content, but write responsibly!"
+msgstr "欢迎回来，%s。通过填写下面的表单，您可以<strong>向账户添加另一个站点</strong>。您能拥有的站点数目没有限制，所以尽情用心灵创作吧，但是要认真负责哦！"
+
+#: wp-signup.php:443
+msgid "<p><em>The site you were looking for, <strong>%s</strong> does not exist, but you can create it now!</em></p>"
+msgstr "<p><em>您正找的站点 <strong>%s</strong> 不存在，您可以现在创建它！</em></p>"
+
+#: wp-includes/ms-functions.php:551
+msgid "Sorry, usernames may not contain the character &#8220;_&#8221;!"
+msgstr "抱歉，用户名不能包含“_”！"
+
+#: wp-signup.php:445
+msgid "<p><em>The site you were looking for, <strong>%s</strong>, does not exist.</em></p>"
+msgstr "<p><em>您正找的站点 <strong>%s</strong> 不存在。</em></p>"
+
+#: wp-signup.php:369
+msgid "If you haven&#8217;t received your email yet, there are a number of things you can do:"
+msgstr "若您还没有收到电子邮件，您可以："
+
+#: wp-includes/ms-settings.php:15
+msgid "Configuration error in <code>wp-config.php</code>. <code>$base</code> is set to <code>BASE</code> when it should be like <code>/</code> or <code>/blogs/</code>."
+msgstr "<code>wp-config.php</code> 中有配置错误。<code>$base</code> 设成了 <code>BASE</code>，它应该类似 <code>/</code> 或 <code>/blogs/</code> 等。"
+
+#: wp-includes/ms-load.php:239
+msgid "If you&#8217;re still stuck with this message, then check that your database contains the following tables:"
+msgstr "若您仍然卡在这一错误消息，请检查数据库中是否包含这些数据表："
+
+#: wp-signup.php:225
+msgid "<a href=\"http://%1$s\">http://%2$s</a> is your new site.  <a href=\"%3$s\">Log in</a> as &#8220;%4$s&#8221; using your existing password."
+msgstr "<a href=\"http://%1$s\">http://%2$s</a> 是您的新站点。请使用您的密码以“%4$s”<a href=\"%3$s\">登录</a>。"
+
+#: wp-admin/my-sites.php:34
+msgid "The primary site you chose does not exist."
+msgstr "您选择的主站点不存在。"
+
+#: wp-admin/network/settings.php:126
+msgid "If you want to limit site registrations to certain domains. One domain per line."
+msgstr "若您只允许用户注册某些域名。每个域名一行。"
+
+#: wp-admin/network/settings.php:136
+msgid "If you want to ban domains from site registrations. One domain per line."
+msgstr "若您不允许使用下列电子邮件域的用户注册站点。每个域名一行。"
+
+#: wp-admin/network/settings.php:214
+msgid "The media upload buttons to display on the &#8220;Write Post&#8221; page. Make sure you update the allowed upload file types below as well."
+msgstr "要在“写文章”页面显示的多媒体内容添加按钮。请确保您在设置中允许上传这些文件类型。"
+
+#: wp-admin/network.php:237
+#: wp-admin/network.php:277
+msgid "The internet address of your network will be <code>%s</code>."
+msgstr "您的网络在互联网上的地址将是 <code>%s</code>。"
+
+#: wp-admin/network.php:190
+msgid "Fill in the information below and you&#8217;ll be on your way to creating a network of WordPress sites. We will create configuration files in the next step."
+msgstr "请填写下列信息，在下一步我们将创建配置文件。"
+
+#: wp-admin/network/settings.php:86
+msgid "If registration is disabled, please set <code>NOBLOGREDIRECT</code> in <code>wp-config.php</code> to a URL you will redirect visitors to if they visit a non-existent site."
+msgstr "若禁止注册，请在 <code>wp-config.php</code> 文件中将 <code>NOBLOGREDIRECT</code> 设为当用户访问不存在站点时跳转到的 URL。"
+
+#: wp-admin/network/site-new.php:34
+msgid "Can&#8217;t create an empty site."
+msgstr "不能创建空站点。"
+
+#: wp-admin/network/upgrade.php:66
+msgid "If your browser doesn&#8217;t start loading the next page automatically, click this link:"
+msgstr "若您的站点不自动加载下一页，请点击："
+
+#: wp-admin/network.php:212
+msgid "You will need a wildcard DNS record if you are going to use the virtual host (sub-domain) functionality."
+msgstr "如果您要使用虚拟主机（子域名）功能，您需要一个泛域名 DNS 记录。"
+
+#: wp-admin/network.php:232
+msgid "We recommend you change your siteurl to <code>%1$s</code> before enabling the network feature. It will still be possible to visit your site using the <code>www</code> prefix with an address like <code>%2$s</code> but any links will not have the <code>www</code> prefix."
+msgstr "我们建议在启用网络功能之前，将 siteurl（站点 URL）更改为 <code>%1$s</code>。您仍然可以在前面添加 <code>www</code> 来访问（比如 <code>%2$s</code>），但是链接就不包含 <code>www</code> 前缀。"
+
+#: wp-admin/network.php:202
+msgid "Please make sure the Apache <code>mod_rewrite</code> module is installed as it will be used at the end of this installation."
+msgstr "请确定 Apache 的 <code>mod_rewrite</code> 模块已安装，因为安装结束时会用到。"
+
+#: wp-admin/network.php:358
+msgid "Add the following to your <code>wp-config.php</code> file in <code>%s</code> <strong>above</strong> the line reading <code>/* That&#8217;s all, stop editing! Happy blogging. */</code>:"
+msgstr "向您的 <code>wp-config.php</code> 文件（在 <code>%s</code>）中添加下列内容。请添加在 <code>/* That&#8217;s all, stop editing! Happy blogging. */</code> 或 <code>/* 好了！请不要再继续编辑。请保存本文件。使用愉快！ */</code> 的<strong>上方</strong>："
+
+#: wp-admin/network/sites.php:79
+msgid "Site marked as spam."
+msgstr "站点已被标记为垃圾站点。"
+
+#: wp-admin/network/sites.php:52
+msgid "Sites marked as spam."
+msgstr "多个站点已被标记为垃圾站点。"
+
+#: wp-admin/network/sites.php:49
+msgid "Sites removed from spam."
+msgstr "多个站点已被从垃圾站点列表中移除。"
+
+#: wp-admin/network/users.php:59
+msgid "Users removed from spam."
+msgstr "多个用户已被从垃圾用户列表中移除。"
+
+#: wp-admin/network/sites.php:76
+msgid "Site removed from spam."
+msgstr "站点已被从垃圾站点列表中移除。"
+
+#: wp-admin/network.php:138
+msgid "Your <strong>WordPress address</strong> must match your <strong>Site address</strong> before creating a Network. See <a href=\"%s\">General Settings</a>."
+msgstr "创建网络之前，您需确保 <strong>WordPress 地址</strong>和您的<strong>站点地址</strong>相同。请见 <a href=\"%s\">常规设置</a>。"
+
+#: wp-admin/network.php:259
+msgid "Because your install is in a directory, the sites in your WordPress network must use sub-directories."
+msgstr "由于您当前的安装是在目录中的，所以您 WordPress 网络中的站点只能使用子目录。"
+
+#: wp-admin/network/sites.php:55
+msgid "Sites deleted."
+msgstr "多个站点已被删除。"
+
+#: wp-admin/network/sites.php:58
+msgid "Site deleted."
+msgstr "站点已被删除。"
+
+#: wp-admin/network/site-new.php:95
+msgid "Site added."
+msgstr "站点已被添加。"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:255
+msgid "You are about to archive the site %s."
+msgstr "您将存档 %s 站点。"
+
+#: wp-admin/network/users.php:56
+msgid "Users marked as spam."
+msgstr "多个用户已被标记为垃圾用户。"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:258
+msgid "You are about to unspam the site %s."
+msgstr "您将把 %s 从垃圾站点列表中移除。"
+
+#: wp-admin/network/site-info.php:134
+msgid "Update <code>siteurl</code> and <code>home</code> as well."
+msgstr "一并更新 <code>siteurl</code> 和 <code>home</code>。"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:260
+msgid "You are about to mark the site %s as spam."
+msgstr "您将标记 %s 为垃圾站点。"
+
+#: wp-admin/network/sites.php:73
+msgid "Site deactivated."
+msgstr "站点已被停用。"
+
+#: wp-admin/network/sites.php:70
+msgid "Site activated."
+msgstr "站点已被启用。"
+
+#: wp-admin/network/sites.php:67
+msgid "Site unarchived."
+msgstr "站点已被取消存档。"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:263
+msgid "You are about to delete the site %s."
+msgstr "您将删除站点 %s。"
+
+#: wp-admin/network/users.php:62
+msgid "Users deleted."
+msgstr "多个用户已被删除。"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:253
+msgid "You are about to unarchive the site %s."
+msgstr "您将取消存档站点 %s。"
+
+#: wp-admin/network/users.php:53
+msgid "User deleted."
+msgstr "用户已被删除。"
+
+#: wp-admin/network/sites.php:64
+msgid "Site archived."
+msgstr "站点已被存档。"
+
+#: wp-admin/ms-delete-site.php:17
+msgid "You do not have sufficient permissions to delete this site."
+msgstr "您无权删除此站点。"
+
+#: wp-admin/ms-delete-site.php:44
+msgid ""
+"Dear User,\n"
+"You recently clicked the 'Delete Site' link on your site and filled in a\n"
+"form on that page.\n"
+"If you really want to delete your site, click the link below. You will not\n"
+"be asked to confirm again so only click this link if you are absolutely certain:\n"
+"###URL_DELETE###\n"
+"\n"
+"If you delete your site, please consider opening a new site here\n"
+"some time in the future! (But remember your current site and username\n"
+"are gone forever.)\n"
+"\n"
+"Thanks for using the site,\n"
+"Webmaster\n"
+"###SITE_NAME###"
+msgstr ""
+"亲爱的用户，\n"
+"您近期点击了站点中的“删除站点”链接，并填写了其中的表格。\n"
+"如果您确实希望删除您的站点，请点击下面的链接。站点将被直接删除，而不会向您再次确认，请谨慎点击：\n"
+"###URL_DELETE###\n"
+"\n"
+"如果您删除您的站点，欢迎您将来回来重新注册一个！（但是请了解，您现在的站点和用户名将不会保留。）\n"
+"\n"
+"感谢使用我们的站点，\n"
+"管理员\n"
+"###SITE_NAME###"
+
+#: wp-admin/ms-delete-site.php:75
+msgid "I'm sure I want to permanently disable my site, and I am aware I can never get it back or use %s again."
+msgstr "我确定我要永久停用我的站点，并且我知道我以后无法再使用 %s 了。"
+
+#: wp-admin/ms-delete-site.php:76
+msgid "Delete My Site Permanently"
+msgstr "永久删除我的站点"
+
+#: wp-admin/network/edit.php:105
+msgid "You probably need to go back to the <a href=\"%s\">options page</a>."
+msgstr "您也许希望回到<a href=\"%s\">设置页面</a>。"
+
+#: wp-admin/network/site-new.php:55
+msgid "Invalid email address."
+msgstr "电子邮件地址无效。"
+
+#: wp-admin/network/site-new.php:71
+msgid "There was an error creating the user."
+msgstr "创建用户过程中出错。"
+
+#: wp-admin/network/edit.php:222
+#: wp-admin/network/edit.php:323
+msgid "You are not allowed to change the current site."
+msgstr "您无权更改当前站点。"
+
+#: wp-admin/ms-delete-site.php:70
+msgid "Remember, once deleted your site cannot be restored."
+msgstr "希望您能了解，删除操作是不可逆的。"
+
+#: wp-admin/ms-delete-site.php:69
+msgid "If you do not want to use your %s site any more, you can delete it using the form below. When you click <strong>Delete My Site Permanently</strong> you will be sent an email with a link in it. Click on this link to delete your site."
+msgstr "若您不希望再使用您的 %s 站点了，您可通过下面的表单删除。当您点击<strong>永久删除我的站点</strong>的时候，您将收到一封含有确认链接的电子邮件。点击其中链接以删除您的站点。"
+
+#: wp-admin/ms-delete-site.php:65
+msgid "Thank you. Please check your email for a link to confirm your action. Your site will not be deleted until this link is clicked. "
+msgstr "感谢。请查收邮件并点击邮件中的确认链接。您的站点将在点击后删除。"
+
+#: wp-admin/ms-delete-site.php:62
+msgid "Delete My Site"
+msgstr "删除我的站点"
+
+#: wp-admin/ms-delete-site.php:22
+msgid "Thank you for using %s, your site has been deleted. Happy trails to you until we meet again."
+msgstr "感谢使用 %s，您的站点已被删除。我们期待与您再会。"
+
+#: wp-admin/network.php:217
+msgctxt "subdomain examples"
+msgid "like <code>site1.%1$s</code> and <code>site2.%1$s</code>"
+msgstr "比如 <code>site1.%1$s</code> 和 <code>site2.%1$s</code>"
+
+#: wp-admin/network.php:221
+msgctxt "subdirectory examples"
+msgid "like <code>%1$s/site1</code> and <code>%1$s/site2</code>"
+msgstr "比如 <code>%1$s/site1</code> 和 <code>%1$s/site2</code>"
+
+#: wp-includes/ms-settings.php:38
+msgid "Multisite only works without the port number in the URL."
+msgstr "多站点功能仅能工作在 URL 中无端口号的情况下。"
+
+#: wp-admin/network/settings.php:231
+msgctxt "File size in kilobytes"
+msgid "%s KB"
+msgstr "%s KB"
+
+#: wp-admin/network/settings.php:67
+msgid "Registration and support emails will come from this address. An address such as <code>support@%s</code> is recommended."
+msgstr "注册和支持邮件发自此地址。建议使用类似 <code>support@%s</code> 的地址。"
+
+#: wp-admin/network/settings.php:209
+msgid "Media upload buttons"
+msgstr "多媒体上传按钮"
+
+#: wp-admin/network/settings.php:225
+msgid "Upload file types"
+msgstr "上传文件类型"
+
+#: wp-admin/network/settings.php:220
+msgid "Limit total size of files uploaded to %s MB"
+msgstr "上传文件的总大小不能超过 %s MB"
+
+#: wp-admin/network.php:184
+#: wp-admin/network.php:204
+#: wp-admin/network.php:252
+#: wp-admin/network.php:262
+msgid "Warning!"
+msgstr "警告！"
+
+#: wp-admin/network.php:202
+msgid "Note:"
+msgstr "注："
+
+#: wp-admin/network.php:206
+msgid "If <code>mod_rewrite</code> is disabled, ask your administrator to enable that module, or look at the <a href=\"http://httpd.apache.org/docs/mod/mod_rewrite.html\">Apache documentation</a> or <a href=\"http://www.google.com/search?q=apache+mod_rewrite\">elsewhere</a> for help setting it up."
+msgstr "如果 <code>mod_rewrite</code> 被禁用，请让您的管理员启用该模块，或参看 <a href=\"http://httpd.apache.org/docs/mod/mod_rewrite.html\">Apache 文档</a><a href=\"http://www.google.com/search?hl=zh-CN&q=apache+mod_rewrite\">等说明</a>，并将它配置好。"
+
+#: wp-admin/network.php:204
+msgid "It looks like the Apache <code>mod_rewrite</code> module is not installed."
+msgstr "似乎 Apache 的 <code>mod_rewrite</code> 模块未安装。"
+
+#: wp-admin/network/settings.php:194
+msgid "The author of the first comment on a new site."
+msgstr "新站点首条评论的作者。"
+
+#: wp-admin/network/settings.php:168
+msgid "The first post on a new site."
+msgstr "新站点的首篇文章。"
+
+#: wp-admin/network/settings.php:177
+msgid "The first page on a new site."
+msgstr "新站点的首篇页面。"
+
+#: wp-admin/network/settings.php:186
+msgid "The first comment on a new site."
+msgstr "新站点的首条评论。"
+
+#: wp-admin/network/settings.php:202
+msgid "The URL for the first comment on a new site."
+msgstr "新站点首条评论作者的 URL。"
+
+#: wp-admin/network/upgrade.php:52
+msgid "All done!"
+msgstr "全部完成！"
+
+#: wp-admin/network.php:27
+msgid "The Network creation panel is not for WordPress MU networks."
+msgstr "网络创建页面对 WordPress MU 网络不适用。"
+
+#: wp-admin/network.php:186
+msgctxt "Default network name"
+msgid "%s Sites"
+msgstr "%s 站点群"
+
+#: wp-admin/network.php:176
+msgid "ERROR: The network could not be created."
+msgstr "错误：无法创建网络。"
+
+#: wp-admin/network/settings.php:83
+msgid "Logged in users may register new sites."
+msgstr "登录用户可注册新站点。"
+
+#: wp-admin/network/settings.php:84
+msgid "Both sites and user accounts can be registered."
+msgstr "用户不仅可以注册新用户，还可注册新站点。"
+
+#: wp-admin/network/settings.php:82
+msgid "User accounts may be registered."
+msgstr "用户可注册账户。"
+
+#: wp-admin/network/settings.php:81
+msgid "Registration is disabled."
+msgstr "禁止注册。"
+
+#: wp-admin/network/settings.php:258
+msgid "Enable administration menus"
+msgstr "启用管理菜单"
+
+#: wp-admin/network/settings.php:51
+msgid "Operational Settings"
+msgstr "运营设置"
+
+#: wp-admin/network/settings.php:255
+msgid "Menu Settings"
+msgstr "菜单设置"
+
+#: wp-admin/network/settings.php:206
+msgid "Upload Settings"
+msgstr "上传设置"
+
+#: wp-admin/network/settings.php:141
+msgid "New Site Settings"
+msgstr "新站点设置"
+
+#: wp-admin/network/settings.php:71
+msgid "Registration Settings"
+msgstr "注册设置"
+
+#: wp-admin/network.php:326
+msgid "The original configuration steps are shown here for reference."
+msgstr "原始安装步骤显示在这里，作为参考。"
+
+#: wp-admin/network.php:164
+msgid "Return to Dashboard"
+msgstr "回到控制板"
+
+#: wp-admin/network.php:163
+msgid "You cannot use port numbers such as <code>%s</code>."
+msgstr "您不能用 <code>%s</code> 这样的端口号。"
+
+#: wp-admin/network.php:153
+#: wp-admin/network.php:331
+#: wp-admin/network.php:356
+msgid "Warning:"
+msgstr "警告："
+
+#: wp-admin/network.php:331
+msgid "An existing WordPress network was detected."
+msgstr "检测到一个已存在的 WordPress 网络。"
+
+#: wp-admin/network.php:332
+msgid "Please complete the configuration steps. To create a new network, you will need to empty or remove the network database tables."
+msgstr "请完成配置步骤。要创建新网络，您需要清空或移除网络数据库数据表。"
+
+#: wp-admin/network.php:96
+msgid "You must define the <code>WP_ALLOW_MULTISITE</code> constant as true in your wp-config.php file to allow creation of a Network."
+msgstr "您需要在 wp-config.php 中将 <code>WP_ALLOW_MULTISITE</code> 常量设为 true，才可以创建站点网络。"
+
+#: wp-admin/network/site-new.php:51
+msgid "Missing or invalid site address."
+msgstr "站点地址有误。"
+
+#: wp-admin/network/site-new.php:53
+msgid "Missing email address."
+msgstr "电子邮件地址缺失。"
+
+#: wp-admin/network.php:249
+msgid "Because you are using <code>localhost</code>, the sites in your WordPress network must use sub-directories. Consider using <code>localhost.localdomain</code> if you wish to use sub-domains."
+msgstr "由于您正在使用 <code>localhost</code>，您 WordPress 网络中的站点只能使用子目录。若您希望用子域名，请考虑使用 <code>localhost.localdomain</code>。"
+
+#: wp-admin/network.php:247
+#: wp-admin/network.php:257
+msgid "Sub-directory Install"
+msgstr "子目录安装"
+
+#: wp-admin/network.php:389
+msgid "To make your installation more secure, you should also add:"
+msgstr "为了让您的安装更加安全，您应添加："
+
+#: wp-admin/network.php:389
+msgid "This unique authentication key is also missing from your <code>wp-config.php</code> file."
+msgid_plural "These unique authentication keys are also missing from your <code>wp-config.php</code> file."
+msgstr[0] "<code>wp-config.php</code> 文件中缺失唯一认证 key。"
+
+#: wp-admin/network.php:503
+msgid "Add the following to your <code>.htaccess</code> file in <code>%s</code>, replacing other WordPress rules:"
+msgstr "在 <code>%s</code> 中的 <code>.htaccess</code> 添加下列内容，覆盖掉其他 WordPress 规则。 "
+
+#: wp-admin/network.php:340
+msgid "Complete the following steps to enable the features for creating a network of sites."
+msgstr "请完成下列步骤以创建站点网络。"
+
+#: wp-admin/network/upgrade.php:18
+#: wp-admin/network/upgrade.php:37
+#: wp-admin/network/upgrade.php:79
+#: wp-admin/network/menu.php:78
+msgid "Update Network"
+msgstr "升级网络"
+
+#: wp-admin/network/upgrade.php:78
+msgid "You can update all the sites on your network through this page. It works by calling the update script of each site automatically. Hit the link below to update."
+msgstr "您可以通过本页面更新网络中的所有站点。它的原理是自动逐个调用所有站点的更新脚本。点击下面的链接以开始。"
+
+#: wp-admin/network.php:102
+msgid "Create a Network of WordPress Sites"
+msgstr "创建一个 WordPress 站点网络"
+
+#: wp-admin/network.php:162
+msgid "You cannot install a network of sites with your server address."
+msgstr "您不能在您服务器的地址上安装一个网络。"
+
+#: wp-admin/network.php:189
+msgid "Welcome to the Network installation process!"
+msgstr "欢迎安装网络！"
+
+#: wp-admin/network.php:210
+msgid "Addresses of Sites in your Network"
+msgstr "您网络中站点的地址"
+
+#: wp-admin/network.php:285
+msgid "What would you like to call your network?"
+msgstr "您如何称呼您的网络？"
+
+#: wp-admin/network.php:211
+msgid "Please choose whether you would like sites in your WordPress network to use sub-domains or sub-directories. <strong>You cannot change this later.</strong>"
+msgstr "请指定您的站点使用子域名还是子目录。<strong>一旦决定，日后将无法更改。</strong>"
+
+#: wp-admin/network.php:243
+msgid "Network Details"
+msgstr "网络详情"
+
+#: wp-admin/network.php:282
+msgid "Network Title"
+msgstr "网络名称"
+
+#: wp-admin/network.php:289
+msgid "Admin E-mail Address"
+msgstr "管理电子邮件地址"
+
+#: wp-admin/network.php:339
+msgid "Enabling the Network"
+msgstr "启用网络"
+
+#: wp-signup.php:223
+msgid "The site %s is yours."
+msgstr "站点 %s 属于您了。"
+
+#: wp-signup.php:193
+msgid "Create Site"
+msgstr "创建站点"
+
+#: wp-signup.php:188
+msgid "If you&#8217;re not going to use a great site domain, leave it for a new user. Now have at it!"
+msgstr "挑个最酷的吧，不然被别人用掉多可惜呀。试试看！"
+
+#: wp-signup.php:179
+msgid "Sites you are already a member of:"
+msgstr "您加入的站点："
+
+#: wp-includes/ms-load.php:94
+msgid "This site has not been activated yet. If you are having problems activating your site, please contact <a href=\"mailto:%1$s\">%1$s</a>."
+msgstr "该站点还没有被激活。如果在激活的时候遇到问题，请联系 <a href=\"mailto:%1$s\">%1$s</a>。"
+
+#: wp-signup.php:92
+msgid "Site Title:"
+msgstr "站点标题："
+
+#: wp-signup.php:71
+msgid "Site Domain:"
+msgstr "站点域名："
+
+#: wp-signup.php:69
+msgid "Site Name:"
+msgstr "站点名称："
+
+#: wp-signup.php:84
+msgid "sitename"
+msgstr "站点名称"
+
+#: wp-signup.php:167
+msgid "Get <em>another</em> %s site in seconds"
+msgstr "在几秒内再创建<em>另一个</em> %s 站点"
+
+#: wp-signup.php:362
+msgid "Congratulations! Your new site, %s, is almost ready."
+msgstr "祝贺！您的新站点 %s 很快就能准备就绪了。"
+
+#: wp-signup.php:421
+msgid "Site registration has been disabled."
+msgstr "站点注册已禁用。"
+
+#: wp-signup.php:265
+msgid "Gimme a site!"
+msgstr "给我一个站点！"
+
+#: wp-signup.php:364
+msgid "But, before you can start using your site, <strong>you must activate it</strong>."
+msgstr "但是，在您使用您的站点之前，<strong>您必须激活它</strong>。"
+
+#: wp-signup.php:366
+msgid "If you do not activate your site within two days, you will have to sign up again."
+msgstr "若您在几天内不进行激活，您需要重新注册。"
+
+#: wp-admin/network/settings.php:63
+msgid "Network Admin Email"
+msgstr "网络管理员电子邮件地址"
+
+#: wp-admin/network/settings.php:54
+msgid "Network Name"
+msgstr "网络名称"
+
+#: wp-admin/network/site-new.php:83
+msgid "[%s] New Site Created"
+msgstr "[%s] 新站点已创建"
+
+#: wp-admin/network/site-new.php:82
+msgid ""
+"New site created by %1s\n"
+"\n"
+"Address: http://%2s\n"
+"Name: %3s"
+msgstr ""
+"%1s 建立的新站点\n"
+"\n"
+"地址：http://%2s\n"
+"名称：%3s"
+
+#: wp-admin/network/edit.php:328
+msgid "WordPress &rsaquo; Confirm your action"
+msgstr "WordPress &rsaquo; 确认您的操作"
+
+#: wp-admin/network/settings.php:150
+msgid "The welcome email sent to new site owners."
+msgstr "用以欢迎新站点所有者的电子邮件。"
+
+#: wp-admin/network/settings.php:218
+msgid "Site upload space"
+msgstr "站点上传大小配额"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:248
+msgid "You are about to activate the site %s"
+msgstr "您将启用站点 %s"
+
+#: wp-admin/network/settings.php:98
+msgid "Send the network admin an email notification every time someone registers a site or user account."
+msgstr "一旦有新用户、新站点注册，立即通知网络管理员。"
+
+#: wp-admin/network/settings.php:114
+msgid "Users are not allowed to register these sites. Separate names by spaces."
+msgstr "用户不可注册这些站点。名称间使用空格隔开。"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:250
+msgid "You are about to deactivate the site %s"
+msgstr "您将停用站点 %s"
+
+#: wp-admin/network/upgrade.php:66
+msgid "Next Sites"
+msgstr "继续升级下一批站点"
+
+#: wp-includes/ms-functions.php:214
+#: wp-includes/ms-functions.php:276
+msgid "That user does not exist."
+msgstr "该用户不存在。"
+
+#: wp-includes/ms-functions.php:534
+msgid "Please enter a username"
+msgstr "请输入用户名"
+
+#: wp-includes/ms-functions.php:654
+msgid "Only lowercase letters and numbers allowed"
+msgstr "只接受小写字母和数字"
+
+#: wp-includes/ms-functions.php:542
+msgid "That username is not allowed"
+msgstr "不能使用这个用户名"
+
+#: wp-includes/ms-functions.php:545
+msgid "You cannot use that email address to signup. We are having problems with them blocking some of our email. Please use another email provider."
+msgstr "您不能使用这个电子邮件地址注册，因为您的电子邮件提供商很有可能过滤了我们发送的邮件。请换一家电子邮件服务提供商。"
+
+#: wp-includes/ms-functions.php:548
+msgid "Username must be at least 4 characters"
+msgstr "用户名至少 4 个字符长"
+
+#: wp-includes/ms-functions.php:557
+msgid "Sorry, usernames must have letters too!"
+msgstr "抱歉，用户名还需要含有字母！"
+
+#: wp-includes/ms-functions.php:560
+msgid "Please enter a correct email address"
+msgstr "请输入一个正确的电子邮件地址"
+
+#: wp-includes/ms-functions.php:566
+msgid "Sorry, that email address is not allowed!"
+msgstr "抱歉，不可使用此电子邮件地址！"
+
+#: wp-includes/ms-functions.php:571
+msgid "Sorry, that username already exists!"
+msgstr "抱歉，此用户名已经存在！"
+
+#: wp-includes/ms-functions.php:575
+msgid "Sorry, that email address is already used!"
+msgstr "抱歉，此电子邮件地址已被使用！"
+
+#: wp-includes/ms-functions.php:587
+msgid "That username is currently reserved but may be available in a couple of days."
+msgstr "此用户名当前被保留，几天后也许会开放使用。"
+
+#: wp-includes/ms-functions.php:590
+msgid "username and email used"
+msgstr "用户名和电子邮件地址已被使用"
+
+#: wp-includes/ms-functions.php:600
+msgid "That email address has already been used. Please check your inbox for an activation email. It will become available in a couple of days if you do nothing."
+msgstr "此电子邮件地址已被使用。请前往收件箱查收激活电子邮件。若您什么也不做，几天后它就会可用。"
+
+#: wp-includes/ms-functions.php:657
+msgid "That name is not allowed"
+msgstr "不可使用此名称"
+
+#: wp-includes/ms-functions.php:882
+msgid ""
+"To activate your user, please click the following link:\n"
+"\n"
+"%s\n"
+"\n"
+"After you activate, you will receive *another email* with your login.\n"
+"\n"
+msgstr ""
+"要激活用户，请点击下面链接：\n"
+"\n"
+"%s\n"
+"\n"
+"激活完成之后，您会收到包含登录信息的*另一封电子邮件*。 \n"
+
+#: wp-includes/ms-functions.php:926
+msgid "Invalid activation key."
+msgstr "激活 key 无效。"
+
+#: wp-includes/ms-functions.php:948
+msgid "Could not create user"
+msgstr "无法创建用户"
+
+#: wp-includes/ms-functions.php:956
+msgid "That username is already activated."
+msgstr "用户名已经激活了。"
+
+#: wp-includes/ms-functions.php:1150
+msgid ""
+"New User: %1s\n"
+"Remote IP: %2s\n"
+"\n"
+"Disable these notifications: %3s"
+msgstr ""
+"新用户：%1s\n"
+"远端 IP：%2s\n"
+"\n"
+"禁用这类提醒消息：%3s"
+
+#: wp-includes/ms-functions.php:1156
+msgid "New User Registration: %s"
+msgstr "有新用户注册：%s"
+
+#: wp-includes/ms-functions.php:1229
+msgid "<h1>Already Installed</h1><p>You appear to have already installed WordPress. To reinstall please clear your old database tables first.</p>"
+msgstr "<h1>已安装过</h1><p>似乎您已经安装过 WordPress 了。要重新安装，请先删除旧的数据表。</p>"
+
+#: wp-includes/ms-functions.php:1391
+msgid "New %1$s User: %2$s"
+msgstr "新 %1$s 用户：%2$s"
+
+#: wp-includes/ms-functions.php:1572
+msgid "Sorry, you have used your space allocation. Please delete some files to upload more files."
+msgstr "抱歉，空间配额已用尽。删除一些文件才可继续上传。"
+
+#: wp-includes/ms-functions.php:1782
+msgid "Please try again!"
+msgstr "请重试！"
+
+#: wp-includes/ms-functions.php:1989
+msgid ""
+"Dear User,\n"
+"\n"
+"Your new account is set up.\n"
+"\n"
+"You can log in with the following information:\n"
+"Username: USERNAME\n"
+"Password: PASSWORD\n"
+"LOGINLINK\n"
+"\n"
+"Thanks!\n"
+"\n"
+"--The Team @ SITE_NAME"
+msgstr ""
+"亲爱的用户，\n"
+"\n"
+"您的账户已成功建立。\n"
+"\n"
+"您可使用如下信息登录：\n"
+"用户名：USERNAME\n"
+"密码：PASSWORD\n"
+"LOGINLINK\n"
+"\n"
+"感谢！\n"
+"\n"
+"-- SITE_NAME 管理组"
+
+#: wp-includes/ms-load.php:87
+msgid "This user has elected to delete their account and the content is no longer available."
+msgstr "用户选择了删除他们的账户，因此内容不再可用。"
+
+#: wp-includes/ms-settings.php:123
+msgid "Database tables are missing."
+msgstr "数据表缺失。"
+
+#: wp-admin/network.php:138
+#: wp-admin/network.php:145
+#: wp-admin/network.php:162
+msgid "Error:"
+msgstr "错误："
+
+#: wp-signup.php:101
+msgid "Privacy:"
+msgstr "隐私："
+
+#: wp-signup.php:134
+msgid "(Must be at least 4 characters, letters and numbers only.)"
+msgstr "(至少 4 字符长，且仅可使用字母和数字。)"
+
+#: wp-signup.php:137
+msgid "Email&nbsp;Address:"
+msgstr "电子邮件地址："
+
+#: wp-signup.php:170
+msgid "There was a problem, please correct the form below and try again."
+msgstr "发生了一个问题，请修正下面表格的问题并再试。"
+
+#: wp-signup.php:252
+msgid "Get your own %s account in seconds"
+msgstr "几秒内获取到属于您的 %s 帐号"
+
+#: wp-signup.php:268
+msgid "Just a username, please."
+msgstr "我只需要用户名。"
+
+#: wp-signup.php:272
+msgid "Next"
+msgstr "下一步"
+
+#: wp-signup.php:299
+msgid "%s is your new username"
+msgstr "%s 是您的新用户名"
+
+#: wp-signup.php:300
+msgid "But, before you can start using your new username, <strong>you must activate it</strong>."
+msgstr "但是，在使用新用户名之前，<strong>您需先激活它</strong>。"
+
+#: wp-signup.php:301
+msgid "Check your inbox at <strong>%1$s</strong> and click the link given."
+msgstr "检查您的 <strong>%1$s</strong> 收件箱并点击其中链接。"
+
+#: wp-signup.php:302
+msgid "If you do not activate your username within two days, you will have to sign up again."
+msgstr "若您在几天内不进行激活，您需要重新注册。"
+
+#: wp-signup.php:328
+msgid "Signup"
+msgstr "注册"
+
+#: wp-signup.php:367
+msgid "Still waiting for your email?"
+msgstr "还在等邮件么？"
+
+#: wp-signup.php:400
+msgid "Registration has been disabled."
+msgstr "注册已停用。"
+
+#: wp-signup.php:415
+msgid "User registration has been disabled."
+msgstr "用户注册已禁用。"
+
+#: wp-admin/my-sites.php:13
+#: wp-admin/ms-delete-site.php:13
+#: wp-admin/network/user-new.php:14
+#: wp-admin/network/index.php:17
+#: wp-admin/network/themes.php:14
+#: wp-admin/network/plugin-editor.php:14
+#: wp-admin/network/plugin-install.php:17
+#: wp-admin/network/site-users.php:14
+#: wp-admin/network/theme-editor.php:14
+#: wp-admin/network/setup.php:14
+#: wp-admin/network/site-settings.php:14
+#: wp-admin/network/site-new.php:14
+#: wp-admin/network/edit.php:14
+#: wp-admin/network/theme-install.php:17
+#: wp-admin/network/users.php:14
+#: wp-admin/network/upgrade.php:14
+#: wp-admin/network/update-core.php:14
+#: wp-admin/network/sites.php:14
+#: wp-admin/network/settings.php:14
+#: wp-admin/network/user-edit.php:14
+#: wp-admin/network/site-info.php:14
+#: wp-admin/network/plugins.php:14
+#: wp-admin/network/profile.php:14
+#: wp-admin/network/update.php:17
+#: wp-admin/network/site-themes.php:14
+#: wp-admin/network/admin.php:16
+msgid "Multisite support is not enabled."
+msgstr "尚未启用多站点支持。"
+
+#: wp-admin/network/user-new.php:31
+#: wp-admin/network/index.php:20
+#: wp-admin/network/site-users.php:42
+#: wp-admin/network/site-settings.php:37
+#: wp-admin/network/site-new.php:31
+#: wp-admin/network/edit.php:102
+#: wp-admin/network/edit.php:175
+#: wp-admin/network/edit.php:192
+#: wp-admin/network/edit.php:236
+#: wp-admin/network/edit.php:246
+#: wp-admin/network/edit.php:256
+#: wp-admin/network/edit.php:267
+#: wp-admin/network/edit.php:278
+#: wp-admin/network/edit.php:288
+#: wp-admin/network/edit.php:298
+#: wp-admin/network/edit.php:308
+#: wp-admin/network/edit.php:355
+#: wp-admin/network/edit.php:376
+#: wp-admin/network/edit.php:391
+#: wp-admin/network/edit.php:442
+#: wp-admin/network/users.php:17
+#: wp-admin/network/upgrade.php:33
+#: wp-admin/network/sites.php:17
+#: wp-admin/network/settings.php:17
+#: wp-admin/network/site-info.php:37
+#: wp-admin/network/site-themes.php:55
+msgid "You do not have permission to access this page."
+msgstr "您无权查看此页面。"
+
+#: wp-admin/ms-delete-site.php:24
+msgid "I'm sorry, the link you clicked is stale. Please select another option."
+msgstr "抱歉，您点击的链接已过期。请选择其它选项。"
+
+#: wp-admin/network/edit.php:344
+msgid "Confirm"
+msgstr "确认"
+
+#: wp-admin/network/user-new.php:34
+msgid "Cannot create an empty user."
+msgstr "不能创建空用户。"
+
+#: wp-admin/network/site-users.php:217
+msgid "Duplicated username or email address."
+msgstr "用户名或电子邮件地址重复。"
+
+#: wp-admin/network/settings.php:58
+msgid "What you would like to call this website."
+msgstr "您如何称呼您的网络？"
+
+#: wp-admin/network/settings.php:74
+msgid "Allow new registrations"
+msgstr "允许新站点注册"
+
+#: wp-admin/network/settings.php:92
+msgid "Registration notification"
+msgstr "注册提醒"
+
+#: wp-admin/network/settings.php:103
+msgid "Add New Users"
+msgstr "添加新用户"
+
+#: wp-admin/network/settings.php:110
+msgid "Banned Names"
+msgstr "不允许使用的名称"
+
+#: wp-admin/network/settings.php:119
+msgid "Limited Email Registrations"
+msgstr "限制电子邮件注册"
+
+#: wp-admin/network/settings.php:131
+msgid "Banned Email Domains"
+msgstr "不允许使用的电子邮件域"
+
+#: wp-admin/network/settings.php:145
+msgid "Welcome Email"
+msgstr "“欢迎”电子邮件"
+
+#: wp-admin/network/settings.php:154
+msgid "Welcome User Email"
+msgstr "“欢迎”用户电子邮件"
+
+#: wp-admin/network/settings.php:159
+msgid "The welcome email sent to new users."
+msgstr "本电子邮件将被发送至新用户。"
+
+#: wp-admin/network/settings.php:172
+msgid "First Page"
+msgstr "首篇页面"
+
+#: wp-admin/network/settings.php:181
+msgid "First Comment"
+msgstr "首条评论"
+
+#: wp-admin/network/settings.php:190
+msgid "First Comment Author"
+msgstr "首条评论的作者"
+
+#: wp-admin/network/settings.php:198
+msgid "First Comment URL"
+msgstr "首条评论者的 URL"
+
+#: wp-admin/network/settings.php:212
+msgid "Videos"
+msgstr "视频"
+
+#: wp-admin/network/settings.php:213
+msgid "Music"
+msgstr "音乐"
+
+#: wp-admin/network/settings.php:230
+msgid "Max upload file size"
+msgstr "最大上传文件的大小"
+
+#: wp-admin/network/settings.php:243
+msgid "Default Language"
+msgstr "默认语言"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:143
+#: wp-admin/network/site-new.php:120
+#: wp-admin/network/site-new.php:122
+#: wp-admin/network/site-info.php:119
+msgid "Domain"
+msgstr "域名"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:147
+#: wp-admin/network/site-info.php:142
+msgid "Last Updated"
+msgstr "上次更新"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:172
+#: wp-admin/network/site-info.php:148
+msgid "Archived"
+msgstr "存档"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:175
+#: wp-admin/network/site-info.php:152
+msgid "Mature"
+msgstr "成人"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:174
+#: wp-admin/network/site-info.php:150
+msgid "Deleted"
+msgstr "删除"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:253
+msgid "Unarchive"
+msgstr "取消存档"
+
+#: wp-admin/my-sites.php:95
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:266
+msgid "Visit"
+msgstr "访问"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:281
+msgid "Never"
+msgstr "从未"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:302
+msgid "Only showing first 5 users."
+msgstr "只显示最先的 5 位用户。"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:302
+msgid "More"
+msgstr "更多"
+
+#: wp-admin/network/site-new.php:140
+msgid "Add Site"
+msgstr "添加站点"
+
+#: wp-admin/network/site-new.php:117
+msgid "Site Address"
+msgstr "站点地址"
+
+#: wp-admin/network/site-new.php:124
+msgid "Only the characters a-z and 0-9 recommended."
+msgstr "只推荐使用字母 a-z 或数字 0-9。"
+
+#: wp-admin/network/site-new.php:133
+msgid "Admin Email"
+msgstr "管理员电子邮件地址"
+
+#: wp-admin/network/site-new.php:137
+msgid "A new user will be created if the above email address is not in the database."
+msgstr "若电子邮件地址在数据库中不存在，新用户将被创建。"
+
+#: wp-admin/network/site-new.php:137
+msgid "The username and password will be mailed to this email address."
+msgstr "其用户名和密码将通过电子邮件告知用户。"
+
+#: wp-admin/includes/class-wp-ms-users-list-table.php:82
+msgid "No users found."
+msgstr "未找到用户。"
+
+#: wp-admin/network/user-new.php:94
+#: wp-admin/network/site-users.php:302
+msgid "Username and password will be mailed to the above email address."
+msgstr "用户名和密码将通过邮件通知给用户。"
+
+#: wp-admin/my-sites.php:16
+msgid "You do not have sufficient permissions to view this page."
+msgstr "您无权查看此页面。"
+
+#: wp-admin/my-sites.php:23
+msgid "You must be a member of at least one site to use this page."
+msgstr "您必须是至少一个站点的成员，才可以使用这个页面。"
+
+#: wp-admin/my-sites.php:68
+msgid "Global Settings"
+msgstr "全局设置"
+
+#: wp-admin/network.php:231
+#: wp-admin/network.php:235
+#: wp-admin/network.php:275
+msgid "Server Address"
+msgstr "服务器地址"
+
+#: wp-admin/network.php:292
+msgid "Your email address."
+msgstr "您的电子邮件地址。"
+
+#: wp-admin/includes/ms-deprecated.php:30
+msgid "Sorry, you must delete files before you can upload any more."
+msgstr "抱歉，在上传更多文件之前，您必须删除一些文件。"
+
+#: wp-activate.php:43
+msgid "Activation Key Required"
+msgstr "需要一个激活 key"
+
+#: wp-activate.php:46
+msgid "Activation Key:"
+msgstr "激活 key："
+
+#: wp-activate.php:62
+#: wp-activate.php:82
+msgid "Your account is now active!"
+msgstr "您的账户已启用！"
+
+#: wp-activate.php:73
+msgid "An error occurred during the activation"
+msgstr "激活过程中发生错误"
+
+#: wp-activate.php:85
+#: wp-signup.php:129
+msgid "Username:"
+msgstr "用户名："
+
