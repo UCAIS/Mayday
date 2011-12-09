@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-CN" /> 
+<meta name="keywords" content="网页有关">
+<link rel="stylesheet" rev="stylesheet" href="css/main.css" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js" charset="UTF-8"></script>
+<title>黑科技</title>
+</head>
+
+<body>
+<script type="text/javascript">
+
+
+</script>
+<div id="page-container">
+<div id="header">
+	<h1 id="title"><a href="http://www.usth.edu.cn">黑龙江科技学院</a></h1>
+	<ul id="nav">
+		<li class="nav-list">
+			<a href="#">学校概况</a>
+			<ul>
+				<li><a href="#">学校简</a></li>
+				<li><a href="#">现任领</a></li>
+				<li><a href="#">校长寄</a></li>
+				<li><a href="#">校史沿</a></li>
+				<li><a href="#">校园漫</a></li>
+			</ul>
+		</li>
+		<li class="nav-list">
+			<a href="#">学校概况</a>
+			<ul>
+				<li><a href="#">学校简介</a></li>
+				<li><a href="#">现任领导</a></li>
+				<li><a href="#">校长寄语</a></li>
+				<li><a href="#">校史沿革</a></li>
+				<li><a href="#">校园漫游</a></li>
+			</ul>
+		</li>
+		<li class="nav-list">
+			<a href="#">学校概况</a>
+			<ul>
+				<li><a href="#">学校简介</a></li>
+				<li><a href="#">现任领导</a></li>
+				<li><a href="#">校长寄语</a></li>
+				<li><a href="#">校史沿革</a></li>
+				<li><a href="#">校园漫游</a></li>
+			</ul>
+		</li>
+		<li class="nav-list">
+			<a href="#">学校概况</a>
+			<ul>
+				<li><a href="#">学校简介</a></li>
+				<li><a href="#">现任领导</a></li>
+				<li><a href="#">校长寄语</a></li>
+				<li><a href="#">校史沿革</a></li>
+				<li><a href="#">校园漫游</a></li>
+			</ul>
+		</li>
+		<li class="nav-list">
+			<a href="#">学校概况</a>
+			<ul>
+				<li><a href="#">学校简介</a></li>
+				<li><a href="#">现任领导</a></li>
+				<li><a href="#">校长寄语</a></li>
+				<li><a href="#">校史沿革</a></li>
+				<li><a href="#">校园漫游</a></li>
+			</ul>
+		</li>
+		<li class="nav-list">
+			<a href="#">学校概况</a>
+			<ul>
+				<li><a href="#">学校简介</a></li>
+				<li><a href="#">现任领导</a></li>
+				<li><a href="#">校长寄语</a></li>
+				<li><a href="#">校史沿革</a></li>
+				<li><a href="#">校园漫游</a></li>
+			</ul>
+		</li>
+		<li class="nav-list">
+			<a href="#">学校概况</a>
+			<ul>
+				<li><a href="#">学校简介</a></li>
+				<li><a href="#">现任领导</a></li>
+				<li><a href="#">校长寄语</a></li>
+				<li><a href="#">校史沿革</a></li>
+				<li><a href="#">校园漫游</a></li>
+			</ul>
+		</li>
+		<li class="nav-list">
+			<a href="#">学校概况</a>
+			<ul>
+				<li><a href="#">学校简介</a></li>
+				<li><a href="#">现任领导</a></li>
+				<li><a href="#">校长寄语</a></li>
+				<li><a href="#">校史沿革</a></li>
+				<li><a href="#">校园漫游</a></li>
+			</ul>
+		</li>
+		<li class="nav-list">
+			<a href="#">学校概况</a>
+			<ul>
+				<li><a href="#">学校简介</a></li>
+				<li><a href="#">现任领导</a></li>
+				<li><a href="#">校长寄语</a></li>
+				<li><a href="#">校史沿革</a></li>
+				<li><a href="#">校园漫游</a></li>
+			</ul>
+		</li>
+		<li class="nav-list">
+			<a href="#">学校概况</a>
+			<ul>
+				<li><a href="#">学校简介</a></li>
+				<li><a href="#">现任领导</a></li>
+				<li><a href="#">校长寄语</a></li>
+				<li><a href="#">校史沿革</a></li>
+				<li><a href="#">校园漫游</a></li>
+			</ul>
+		</li>
+	</ul>
+</div><!-- #header end -->
+
+<div id="footer"></div><!-- #footer end -->
+
+</div><!-- page-container -->
+<script type="text/javascript">
+$(function(){
+  $('.nav-list').hover(
+  function(){
+	  $(this).find('a:first').addClass("hover");
+	  var current_li=$(this);
+	  NavWaitSlide = setTimeout(function() {
+		  if(!$(current_li).children('ul').is(':visible'))
+		  {
+				$(current_li).find('ul').slideDown(200);
+		  }
+	  },100)
+  },
+function(){
+	  clearTimeout(NavWaitSlide);
+	  $(this).find('ul').slideUp(100);
+	  $(this).find('a:first').removeClass("hover");
+  }
+);
+}
+);
+
+//Tab Toggle
+function setTab(name,cursel,n){
+	for(i=1;i<=n;i++){
+		var menu=document.getElementById(name+i);
+		var con=document.getElementById("con_"+name+"_"+i);
+		menu.className=i==cursel?"hover":"";
+		con.style.display=i==cursel?"block":"none";
+	}
+}
+</script>
+</body>
+</html>
