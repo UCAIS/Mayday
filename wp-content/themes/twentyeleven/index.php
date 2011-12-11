@@ -8,45 +8,190 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package WordPress
- * @subpackage Twenty_Eleven
+ * @package USTH
+ * @subpackage Glowin
+ * @since Mayday alpha0.1
  */
 
-get_header(); ?>
+get_header('index'); ?>
+<div id="content">
+    <div id="left" style="background: url(<?php echo get_template_directory_uri(); ?>/images/01.gif) no-repeat right 130px;">
+        <object data="<?php echo get_template_directory_uri(); ?>/images/school_motto.swf" type="application/x-shockwave-flash" width="300" height="120">
+            <param name="movie" value="<?php echo get_template_directory_uri(); ?>/images/school_motto.swf" />
+            <param name="wmode" value="transparent"/>
+        </object>
+    </div>
+    <div id="center">
+        <div id="news-list">
+            <h2><a href="#" class="news-title">科院新闻</a><span style="font-family: ;"><a href="#" class="more">更多新闻</a></span></h2>
+            <ul>
+            <?php 
+            $query_news = array(
+            'category__not_in' => array( 1, 4, 7),
+            'orderby' => date,
+            'showposts' => 7
+            );
+            query_posts( $query_news );
+            
+            if ( have_posts() ) :
 
-		<div id="primary">
-			<div id="content" role="main">
+                  /* Start the Loop */
+                while ( have_posts() ) : the_post();
+            ?>
+            <li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a><span><?php echo esc_attr( get_the_date( 'm-j' ) ) ?></span></li>
+            <?php
+                endwhile;
+            ?>
 
-			<?php if ( have_posts() ) : ?>
+            <?php else : ?>
+            <li><a href="http://www.usth.edu.cn">哇哦，网站暂时没有最新新闻</a></li>
+            <?php endif; 
+            // reset query
+                wp_reset_query();
+            ?>
+            </ul>
+        </div><!-- #news-list end -->
+        <div id="search">
+        <?php get_search_form(); ?>
+        </div><!-- #search end -->
+        <div id="websites-list">
+            <div class="lib_Menubox lib_tabborder">
+              <ul>
+                <li class="tit_bj_left"></li>
+                <li id="one1" onclick="setTab('one',1,4)" class="hover"><span>专题网站</span></li>
+                <li id="one2" onclick="setTab('one',2,4)" class=""><span>科院特色</span></li>
+                <li id="one3" onclick="setTab('one',3,4)" class=""><span>发展见证</span></li>
+                <li id="one4" onclick="setTab('one',4,4)" class=""><span>热点关注</span></li>
+              </ul>
+            </div>
+            <div class="lib_Contentbox lib_tabborder">
+            <div id="con_one_1" class="text_div" style="display: block; ">
+                <table width="340" border="0">
+                    <tbody>
+                    <tr>
+                        <td><a href="http://cxzyzt.usth.net.cn/" target="_blank">创先争优活动专题网站</a></td>
+                        <td><a href="http://222.171.107.124:60080/" target="_blank">干部在线学习中心</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://xyq.usth.net.cn/" target="_blank">黑龙江校研企网络平台</a></td>
+                        <td><a href="http://xcbzt.usth.net.cn/" target="_blank">学习型党组织建设专题网站</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.hljnews.cn/fou_zt/dzwxz.html" target="_blank">“党在我心中”专题网站</a></td>
+                        <td><a href="http://222.171.107.122:81/" target="_blank">高教强省与东部煤电化</a></td>
+                    </tr>
+                    </tbody>
+                </table>         
+            </div>
+            <div id="con_one_2" class="text_div" style="display: none; ">
+                <table width="340" border="0">
+                    <tbody>
+                    <tr>
+                    <td><a href="http://dianqi.jpk.usth.net.cn/" target="_blank">电气工程实验与实践中心</a></td>
+                    <td><a href="http://sxzx.usth.net.cn/" target="_blank">工程训练与基础实验中心</a></td>
+                    </tr>
+                    <tr>
+                    <td><a href="http://zhizao.usth.net.cn/" target="_blank">现代制造工程中心</a></td>
+                    <td><a href="http://kyyjy.usth.net.cn" target="_blank">黑龙江矿业研究院</a></td>
+                    </tr>
+                    <tr>
+                    <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="con_one_3" class="text_div" style="display: none; ">
+                <table width="340" border="0">
+                <tbody>
+                    <tr>
+                        <td><a href="http://218.7.13.212/main/fzjs/shipin.html" target="_blank">与时俱进的科技学院</a></td>
+                        <td> <a href="http://218.7.13.212/shiyiwu/xwdt/Article/201103/news.html" target="_blank">"十一五"发展的主要成效</a></td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            <div id="con_one_4" class="text_div" style="display: none; ">
+                <table width="340" border="0">
+                <tbody>
+                <tr>
+                    <td><a href="http://usth.cn/videonews/" target="_blank">黑龙江科技学院视频新闻</a></td>
+                    <td><a href="http://usth.cn/main/meiti/2005.html" target="_blank">媒体上的黑龙江科技学院</a></td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+            </div>
+        </div><!-- #websites-list end -->
+    </div>
+    <div id="right">
+        <div id="pic_news">    
+            <div id="pic_news_info"></div>
+            <ul>
+                <li class="on">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+            <div id="pic_news_list">
+                <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/p1.jpg" title="橡树小屋的blog" alt="橡树小屋的教育个" /></a>
+                <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/p5.jpg" title="橡树小屋的blog" alt="橡树小屋的blog" /></a>
+                <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/p3.jpg" title="橡树小屋的blog" alt="橡树小屋的看见了" /></a>
+                <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/p4.jpg" title="橡树小屋的blog" alt="橡树小屋法国化" /></a>
+            </div>
+        </div>
+        <div id="notice">
+            <h2><a href="#" class="notice-title">公告信息</a><span><a href="#" class="more">详细</a></span></h2>
+            <div id="notice-ul">
+            <ul>
+            <?php 
+            $query_announce = array(
+            'category__in' => array(4),
+            'orderby' => date,
+            'showposts' => 8
+            );
+            query_posts( $query_announce );
+            
+            if ( have_posts() ) :
 
-				<?php twentyeleven_content_nav( 'nav-above' ); ?>
+                  /* Start the Loop */
+                while ( have_posts() ) : the_post();
+            ?>
+            <li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
+            <?php
+                endwhile;
+            ?>
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+            <?php else : ?>
+            <li><a href="http://www.usth.edu.cn">哇哦，网站暂时没有最新新闻</a></li>
+            <?php endif; 
+            // reset query
+                wp_reset_query();
+            ?>
+            </ul>
+            </div>
+        </div><!-- #notice end -->
+        <div id="information">
+            <h2>信息资源</h2>
+            <ul>
+                <li><a href="#">网络教学</a></li>
+                <li><a href="#">英语在线</a></li>
+                <li><a href="#">教学资源</a></li>
+                <li><a href="#">学生成绩</a></li>
+                <li><a href="#">财务查询</a></li>
+                <li><a href="#">资产管理</a></li>
+                <li><a href="#">网上预订</a></li>
+                <li><a href="#">精品课程</a></li>
+                <li><a href="#">校园卡通</a></li>
+                <li><a href="#">电费查询</a></li>
+            </ul>
+        </div>
+    </div><!-- #right end -->
+    <div id="water">
+        <object data="<?php echo get_template_directory_uri(); ?>/images/water.swf" type="application/x-shockwave-flash" width="1000" height="60">
+            <param name="movie" value="<?php echo get_template_directory_uri(); ?>/images/water.swf" />
+            <param name="wmode" value="transparent"/>
+        </object>
+    </div>
+</div><!-- #content end -->
 
-					<?php get_template_part( 'content', get_post_format() ); ?>
-
-				<?php endwhile; ?>
-
-				<?php twentyeleven_content_nav( 'nav-below' ); ?>
-
-			<?php else : ?>
-
-				<article id="post-0" class="post no-results not-found">
-					<header class="entry-header">
-						<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentyeleven' ); ?></h1>
-					</header><!-- .entry-header -->
-
-					<div class="entry-content">
-						<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'twentyeleven' ); ?></p>
-						<?php get_search_form(); ?>
-					</div><!-- .entry-content -->
-				</article><!-- #post-0 -->
-
-			<?php endif; ?>
-
-			</div><!-- #content -->
-		</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php get_footer('index'); ?>

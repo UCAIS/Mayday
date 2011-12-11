@@ -6,6 +6,12 @@ a:visited { color: #551A8B;}
 a:hover { text-decoration: underline;}
 a:active { color: #ccc;}
 
+/* Assistive text */
+.assistive-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
 
 #page-container {
 	width: 1000px;
@@ -38,20 +44,20 @@ a:active { color: #ccc;}
 	font-size: 13px;
 }
 
-.nav-list {
+.menu-item {
 	display:inline;
 	float: left;
 	z-index: 100;
 }
 
-.nav-list a {
+.menu-item a {
     color:#fff;
     text-decoration:none;
     display:block;
     padding:0 13px;
 }
 
-.nav-list li a:hover {
+.menu-item li a:hover {
     text-decoration:none;
 	background: url(../images/a_bg.gif) repeat-x;
 }
@@ -69,14 +75,14 @@ a:active { color: #ccc;}
 	padding: 3px 0;
 }
 
-#nav .nav-list li a {
+#nav .menu-item li a {
 	padding: 3px 10px;
 	font-weight: normal;
 	_zoom: 1;
 	_width: 53px;
 }
 
-.nav-list li a:hover {
+.menu-item li a:hover {
     color:#FF0;
 }
 
@@ -420,7 +426,7 @@ li.tit_bj_left{
 #article #nav li {
 	float: none;
 }
-#article .nav-list ul {
+#article .menu-item ul {
 	margin-top: -40px;
 	margin-left: 60px;
 }
