@@ -15,7 +15,7 @@
 
 get_header('index'); ?>
 <div id="content">
-    <div id="left" style="background: url(<?php echo get_template_directory_uri(); ?>/images/01.gif) no-repeat right 130px;">
+    <div id="left" style="background: url(<?php echo get_template_directory_uri(); ?>/images/0<?php echo mt_rand(1, 5);?>.gif) no-repeat right 130px;">
         <object data="<?php echo get_template_directory_uri(); ?>/images/school_motto.swf" type="application/x-shockwave-flash" width="300" height="120">
             <param name="movie" value="<?php echo get_template_directory_uri(); ?>/images/school_motto.swf" />
             <param name="wmode" value="transparent"/>
@@ -25,7 +25,7 @@ get_header('index'); ?>
         <div id="news-list">
             <h2><a href="#" class="news-title">科院新闻</a><span style="font-family: ;"><a href="#" class="more">更多新闻</a></span></h2>
             <ul>
-            <?php 
+            <?php
             $query_news = array(
             'category__not_in' => array( 1, 4, 7),
             'orderby' => date,
@@ -124,7 +124,7 @@ get_header('index'); ?>
         </div><!-- #websites-list end -->
     </div>
     <div id="right">
-        <div id="pic_news">    
+        <div id="pic_news">
             <div id="pic_news_info"></div>
             <ul>
                 <li class="on">1</li>
@@ -133,10 +133,27 @@ get_header('index'); ?>
                 <li>4</li>
             </ul>
             <div id="pic_news_list">
-                <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/p1.jpg" title="橡树小屋的blog" alt="橡树小屋的教育个" /></a>
-                <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/p5.jpg" title="橡树小屋的blog" alt="橡树小屋的blog" /></a>
-                <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/p3.jpg" title="橡树小屋的blog" alt="橡树小屋的看见了" /></a>
-                <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/p4.jpg" title="橡树小屋的blog" alt="橡树小屋法国化" /></a>
+            <?php
+            
+            if ( have_posts() ) :
+                $pic_args = 0;
+                  /* Start the Loop */
+                while ( have_posts() ) : the_post();
+                if ( has_post_thumbnail() ) :
+                $pic_title = get_the_title();
+                ?>
+                <a href="<?php the_permalink(); ?>" target="_blank"><?php the_post_thumbnail( array('title' => $pic_title, 'alt' => $pic_title) ); ?></a>
+            <?php
+                $pic_args ++;
+                if( $pic_args >3) { break;}
+                
+                endif;
+                endwhile;
+            ?>
+
+            <?php else : ?>
+            <a href="http://www.usth.edu.cn"><img src="<?php echo get_template_directory_uri(); ?>/images/p1.jpg" title="没有图片新闻哦" alt="没有图片新闻" /></a>
+            <?php endif; ?>
             </div>
         </div>
         <div id="notice">
