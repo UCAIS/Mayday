@@ -413,6 +413,10 @@ li.tit_bj_left{
 #head_pic {
 	margin-top: -20px;
 }
+.breadcrumbs li {
+    float: left;
+    margin: 0 5px 0 0;
+}
 #article #header {
 	height: 120px;
 }

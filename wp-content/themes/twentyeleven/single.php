@@ -7,26 +7,48 @@
  * @since Twenty Eleven 1.0
  */
 
-get_header(); ?>
+get_header('single'); ?>
 
-		<div id="primary">
-			<div id="content" role="main">
 
-				<?php while ( have_posts() ) : the_post(); ?>
+<div id="content">
+	<div id="left">
+    <?php get_header('nav'); ?>
+	</div>
+	<div id="center">
+		<div id="article-detail">
+			<div id="article-nav">
+    <?php
+            if (function_exists('get_breadcrumbs')){
+                get_breadcrumbs();
+            }
+     ?>
 
-					<nav id="nav-single">
-						<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>
-						<span class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">&larr;</span> Previous', 'twentyeleven' ) ); ?></span>
-						<span class="nav-next"><?php next_post_link( '%link', __( 'Next <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?></span>
-					</nav><!-- #nav-single -->
+			</div>
+			<div id="article-content">
+            <?php while ( have_posts() ) : the_post(); ?>
+				<div class="hd">
+					<h1><?php the_title(); ?></h1>
+					<div class="info">
+                    <?php printf('<span class="writer" rel="author">作者：<a href="%1$s" title="%2$s">%3$s</a></span><span class="pub-time">更新时间：2011-12-2</span>',
+                    		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+                    		sprintf('查看%s所有的文章', get_the_author() ),
+                    		esc_html( get_the_author() ),
+                            esc_html( get_the_date() )
+                    	); 
+                    ?>
+					</div>
+				</div>
+				<div class="bd">
+                <?php the_content(); ?>
+				</div>
+            <?php endwhile; // end of the loop. ?>
+			</div>
+		</div><!-- #article-detail end -->
+	</div>
 
-					<?php get_template_part( 'content', 'single' ); ?>
+	<div id="article-footer">
+		
+	</div>
+</div><!-- #content end -->
 
-					<?php comments_template( '', true ); ?>
-
-				<?php endwhile; // end of the loop. ?>
-
-			</div><!-- #content -->
-		</div><!-- #primary -->
-
-<?php get_footer(); ?>
+<?php get_footer('single'); ?>

@@ -48,4 +48,12 @@
 <div id="page-container">
 <div id="header">
     <h1 id="title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-
+	<object id="head_motto" data="<?php echo get_template_directory_uri(); ?>/images/head_motto.swf" type="application/x-shockwave-flash" width="310" height="80">
+		<param name="movie" value="<?php echo get_template_directory_uri(); ?>/images/head_motto.swf" />
+		<param name="wmode" value="transparent"/>
+	</object>
+	<object id="head_pic" data="<?php echo get_template_directory_uri(); ?>/images/head_pic.swf" type="application/x-shockwave-flash" width="200" height="120">
+		<param name="movie" value="<?php echo get_template_directory_uri(); ?>/images/head_pic.swf" />
+		<param name="wmode" value="transparent"/>
+	</object>
+</div><!-- #header end -->

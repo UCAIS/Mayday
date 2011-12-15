@@ -49,12 +49,6 @@
 <div id="header">
     <h1 id="title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 <?php
-    //The menu 
-    $menu_args = array(
-    'theme_loacation' => 'primary',
-    'container' => 'false',
-    'menu_id' => 'nav'
-    );
-    wp_nav_menu( $menu_args );
+get_header('nav');
 ?>
 </div><!-- #header end -->
