@@ -1,8 +1,7 @@
 <?php
 /**
- * The template for displaying 404 pages (Not Found).
+ * The page for displaying 404 pages (Not Found).
  *
- * @package WordPress
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */

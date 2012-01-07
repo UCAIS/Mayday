@@ -12,7 +12,7 @@ get_header('single'); ?>
 
 <div id="content">
 	<div id="left">
-    <?php get_header('nav'); ?>
+    <?php get_header('nav'); ?>o
 	</div>
 	<div id="center">
 		<div id="article-detail">

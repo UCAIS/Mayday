@@ -33,9 +33,8 @@
  *
  * For more information on hooks, actions, and filters, see http://codex.wordpress.org/Plugin_API.
  *
- * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
+ * @package Glow
+ * @since Twenty Eleven 0.01
  */
 
 /**
@@ -104,7 +103,7 @@ function twentyeleven_setup() {
 	add_theme_support( 'post-formats', array( 'aside', 'link', 'gallery', 'status', 'quote', 'image' ) );
 
 	// Add support for custom backgrounds
-	add_custom_background();
+	//add_custom_background();
 
 	// This theme uses Featured Images (also known as post thumbnails) for per-post/per-page Custom Header images
 	add_theme_support( 'post-thumbnails' );
@@ -112,10 +111,10 @@ function twentyeleven_setup() {
 	// The next four constants set how Twenty Eleven supports custom headers.
 
 	// The default header text color
-	define( 'HEADER_TEXTCOLOR', '000' );
+	//define( 'HEADER_TEXTCOLOR', '000' );
 
 	// By leaving empty, we allow for random image rotation.
-	define( 'HEADER_IMAGE', '' );
+	//define( 'HEADER_IMAGE', '' );
 
 	// The height and width of your custom header.
 	// Add a filter to twentyeleven_header_image_width and twentyeleven_header_image_height to change these values.
@@ -198,7 +197,7 @@ if ( ! function_exists( 'twentyeleven_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
- * @since Twenty Eleven 1.0
+ * @since Twenty Eleven 0.01
  */
 function twentyeleven_header_style() {
 
