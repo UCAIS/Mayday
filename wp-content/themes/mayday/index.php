@@ -45,7 +45,7 @@ get_header('index'); ?>
 
             <?php else : ?>
             <li><a href="http://www.usth.edu.cn">哇哦，网站暂时没有最新新闻</a></li>
-            <?php endif; 
+            <?php endif;
             // reset query
                 wp_reset_query();
             ?>

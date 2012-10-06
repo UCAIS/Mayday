@@ -44,6 +44,14 @@ a:active { color: #ccc;}
 	font-size: 13px;
 }
 
+.nav-list {
+	float: left;
+}
+
+#nav .nav-list ul {
+	margin-left: 0px;
+}
+
 .menu-item {
 	display:inline;
 	float: left;
@@ -430,7 +438,7 @@ li.tit_bj_left{
 #article #nav li {
 	float: none;
 }
-#article .menu-item ul {
+#article .nav-list ul {
 	margin-top: -40px;
 	margin-left: 60px;
 }
