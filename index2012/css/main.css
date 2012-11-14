@@ -71,5 +71,21 @@ legend {
 
 #page-container {
 	background: url(../images/background_1.jpg) no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+}
 
+#header {
+	/*background-image: url(../images/header-bg.png) repeat;*/
+	background:#000;
+	filter:alpha(opacity=70); /* IE transparent */
+	-moz-opacity:0.7; /* Moz + FF transparent */
+	opacity: 0.7; /* CSS3 transparent */
+}
+
+#header-index {
+	width: 980px;
+	height: 103px;
+	margin-left: auto;
+	margin-right: auto;
 }
