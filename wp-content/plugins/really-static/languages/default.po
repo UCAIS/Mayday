@@ -1,0 +1,158 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Really-static 0.22\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-05-31 17:23+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Erik Sefkow <phpwelt@googlemail.com>\n"
+"Language-Team: phpwelt.net <phpwelt@googlemail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: main.php:519
+#: main.php:550
+msgid "writing"
+msgstr ""
+
+#: main.php:912
+msgid "Really Static Settings"
+msgstr ""
+
+#: main.php:922
+msgid "Source"
+msgstr ""
+
+#: main.php:922
+msgid "internal filepath to wordpressinstalltion"
+msgstr ""
+
+#: main.php:923
+msgid "url to wordpressinstalltion"
+msgstr ""
+
+#: main.php:925
+msgid "path to the templatefolder"
+msgstr ""
+
+#: main.php:927
+msgid "Destination"
+msgstr ""
+
+#: main.php:927
+msgid "internal filepath from FTP-Root to cachedfiles"
+msgstr ""
+
+#: main.php:927
+msgid "the path inside your FTP account e.g. \"/path/\".If it should saved to maindirectory write \"/\" "
+msgstr ""
+
+#: main.php:928
+msgid "Domainprefix for your cached files"
+msgstr ""
+
+#: main.php:930
+msgid "FTP-Server IP"
+msgstr ""
+
+#: main.php:931
+msgid "FTP-login User"
+msgstr ""
+
+#: main.php:932
+msgid "FTP-login Password"
+msgstr ""
+
+#: main.php:935
+msgid "Path to the templatefolder"
+msgstr ""
+
+#: main.php:939
+msgid "On the category/tag page e.g. is a commentcounter (not recomended)"
+msgstr ""
+
+#: main.php:942
+msgid "I want that Really-Static try to handle with the ? in the url"
+msgstr ""
+
+#: main.php:944
+msgid "Save"
+msgstr ""
+
+#: main.php:947
+msgid "If this Plugin is installed on a Blog with exsiting Posts or for example you changed your design so you shold press the \"write all files\" Button. If the prezess is terminatet (e.g. because of a timeout), just press this button again"
+msgstr ""
+
+#: main.php:949
+msgid "write all files"
+msgstr ""
+
+#: main.php:951
+msgid "If you want to renew all files, first press the \"reset filedatabase\" button and then the \"write all files\" button"
+msgstr ""
+
+#: main.php:952
+msgid "reset filedatabase"
+msgstr ""
+
+#: main.php:955
+msgid "Refresh a staticsite manualy"
+msgstr ""
+
+#: main.php:957
+msgid "(complete url of the static page)"
+msgstr ""
+
+#: main.php:958
+msgid "refresh"
+msgstr ""
+
+#: main.php:961
+msgid "What should Really-Static do"
+msgstr ""
+
+#: main.php:962
+msgid "This option allows to give Really-Static accurate information about when a speified URL should make static. This is good thing, when you use example sitemaps or pages that must refreshed every 24 hours."
+msgstr ""
+
+#: main.php:964
+msgid "URL"
+msgstr ""
+
+#: main.php:964
+msgid "when"
+msgstr ""
+
+#: main.php:967
+msgid "when a Post is created, edited or deleted"
+msgstr ""
+
+#: main.php:970
+msgid "every 24 hours"
+msgstr ""
+
+#: main.php:971
+msgid "everytime Really-Static runs"
+msgstr ""
+
+#: main.php:972
+msgid "Submit"
+msgstr ""
+
+#: main.php:977
+msgid "Rewrite every 24 hours"
+msgstr ""
+
+#: main.php:984
+msgid "Rewrite on every run of Really-Static"
+msgstr ""
+
+#: main.php:991
+msgid "Rewrite on create, edit or delete a post"
+msgstr ""
+
