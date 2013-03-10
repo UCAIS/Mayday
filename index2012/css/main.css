@@ -69,8 +69,11 @@ legend {
 
 /* CSS Reset END */
 
+body {
+	background: url(../images/background_1.jpg) no-repeat top center;
+}
+
 #page-container {
-	background: url(../images/background_1.jpg) no-repeat;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -88,4 +91,10 @@ legend {
 	height: 103px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#header-index h1 {
+	width: 300px;
+	height: 55px;
+	background-color: red;
 }
