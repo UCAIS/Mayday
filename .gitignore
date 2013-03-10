@@ -9,5 +9,7 @@ wp-content/uploads
 wp-content/themes/twentyeleven-old
 doc/psd
 
+.hcaccess
 .idea
+
 usth.iml
