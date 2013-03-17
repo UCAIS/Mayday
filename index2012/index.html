@@ -15,7 +15,7 @@
 <div id="header-index">
 	<h1 id="title"><a href="http://www.usth.edu.cn">黑龙江科技学院</a></h1>
     <ul id="nav">
-        <li class="nav-list">
+        <li class="nav-list" id="nav-1">
             <a href="#">学校概况</a>
             <ul>
                 <li><a href="http://usth.cn/other/Article/201209/110.html">学校简介</a></li>
@@ -26,10 +26,10 @@
                 <li><a href="http://usth.cn/jpk/info/guanhuai.htm">领导关怀</a></li>
             </ul>
         </li>
-        <li class="nav-list">
-            <a href="http://usth.cn/other/Article/200504/106.html">机构设置</a>
+        <li class="nav-list" id="nav-2">
+            <a href="http://usth.edu.cn/other/Article/200504/106.html">机构设置</a>
         </li>
-        <li class="nav-list">
+        <li class="nav-list" id="nav-3">
             <a href="#">教学教育</a>
             <ul>
                 <li><a href="http://60.219.165.29:101/">本科生教育</a></li>
@@ -37,14 +37,14 @@
                 <li><a href="http://usth.cn/other/Article/200504/107.html">国际合作</a></li>
             </ul>
         </li>
-        <li class="nav-list">
+        <li class="nav-list" id="nav-4">
             <a href=”#”>科学研究</a>
             <ul>
                 <li><a href="http://xbao.usth.net.cn/">学报</a></li>
                 <li><a href="http://60.219.165.29:96/">科技处</a></li>
             </ul>
         </li>
-        <li class="nav-list">
+        <li class="nav-list" id="nav-5">
             <a href="#">招生就业</a>
             <ul>
                 <li><a href="http://218.7.67.24/">本科</a></li>
@@ -52,7 +52,7 @@
             </ul>
         </li>
         
-        <li class="nav-list">
+        <li class="nav-list" id="nav-6">
             <a href="#">院系主页</a>
             <ul>
                 <li><a href="http://ziyuan.usth.net.cn/">资源与环境工程学院</a></li>
@@ -77,7 +77,7 @@
             </ul>
         </li>
         
-        <li class="nav-list">
+        <li class="nav-list" id="nav-7">
             <a href="#">图书资料</a>
             <ul>
                 <li><a href="http://book.usth.net.cn/">图书馆主页</a></li>
@@ -87,12 +87,20 @@
                 <li><a href="http://link.springer.com/">springer数据库</a></li>
             </ul>
         </li>
-        <li class="nav-list">
+<!--         <li class="nav-list" id="nav-8">
             <a href="http://222.171.107.122/">校友总会</a>
-        </li>
+        </li> -->
     </ul>
+    <div id="quick-link">
+    	<ul>
+    		<li><a href="#">高考生</a><span>|</span></li>
+    		<li><a href="#">在校生</a><span>|</span></li>
+    		<li><a href="#">教职工</a><span>|</span></li>
+    		<li><a href="#">校友会</a></li>
+    	</ul>
+    </div>
 
-	</div>
+	</div><!-- #header-index end -->
 </div><!-- #header end -->
 
 <div id="content">
@@ -115,24 +123,14 @@
 				<li><a href="#"><span>12-01</span>研究生学院召开企业与研究生对接座谈会</a></li>
 			</ul>
 		</div><!-- #news-list end -->
-		<div id="search">
-			<form action="search.php" method="get">
-				<input id="keyword" maxlength="255" name="q" onblur="if (value ==''){value='请输入关键字'}" onmouseover="this.focus()" onfocus="this.select()" onclick="if(this.value=='请输入关键字') this.value=''" size="12" value="请输入关键字" />
-				<input id="submit" type="image" alt="站内搜索" src="images/search_1.gif" name="sa" />
-			</form>
-			<form action="search.php" method="get">
-				<input id="keyword" maxlength="30" name="Keyword" onblur="if (value ==''){value='请输入关键字'}" onmouseover="this.focus()" onfocus="this.select()" onclick="if(this.value=='请输入关键字') this.value=''" size="12" value="请输入关键字" />
-				<input id="submit" type="image" alt="新闻搜索" src="images/search_2.gif" name="xwdt" />
-			</form>
-		</div><!-- #search end -->
+
 		<div id="websites-list">
-			<div class="lib_Menubox lib_tabborder">
+			<div>
 			  <ul>
-				<li class="tit_bj_left"></li>
-				<li id="one1" onclick="setTab('one',1,4)" class="hover"><span>专题网站</span></li>
-				<li id="one2" onclick="setTab('one',2,4)" class=""><span>科院特色</span></li>
-				<li id="one3" onclick="setTab('one',3,4)" class=""><span>发展见证</span></li>
-				<li id="one4" onclick="setTab('one',4,4)" class=""><span>热点关注</span></li>
+				<li>专题网站</li>
+				<li>科院特色</li>
+				<li>发展见证</li>
+				<li>热点关注</li>
 			  </ul>
 			</div>
 			<div class="lib_Contentbox lib_tabborder">
@@ -264,26 +262,26 @@
 </div><!-- page-container -->
 <script type="text/javascript">
 /*-- nav toggle --*/
-$(function(){
-  $('.nav-list').hover(
-  function(){
-	  $(this).find('a:first').addClass("hover");
-	  var current_li=$(this);
-	  NavWaitSlide = setTimeout(function() {
-		  if(!$(current_li).children('ul').is(':visible'))
-		  {
-				$(current_li).find('ul').slideDown(200);
-		  }
-	  },100)
-  },
-function(){
-	  clearTimeout(NavWaitSlide);
-	  $(this).find('ul').slideUp(100);
-	  $(this).find('a:first').removeClass("hover");
-  }
-);
-}
-);
+// $(function(){
+//   $('.nav-list').hover(
+//   function(){
+// 	  $(this).find('a:first').addClass("hover");
+// 	  var current_li=$(this);
+// 	  NavWaitSlide = setTimeout(function() {
+// 		  if(!$(current_li).children('ul').is(':visible'))
+// 		  {
+// 				$(current_li).find('ul').slideDown(200);
+// 		  }
+// 	  },100)
+//   },
+// function(){
+// 	  clearTimeout(NavWaitSlide);
+// 	  $(this).find('ul').slideUp(100);
+// 	  $(this).find('a:first').removeClass("hover");
+//   }
+// );
+// }
+// );
 </script>
 </body>
 </html>

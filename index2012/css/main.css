@@ -81,9 +81,9 @@ body {
 #header {
 	/*background-image: url(../images/header-bg.png) repeat;*/
 	background:#000;
-	filter:alpha(opacity=70); /* IE transparent */
-	-moz-opacity:0.7; /* Moz + FF transparent */
-	opacity: 0.7; /* CSS3 transparent */
+	filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	opacity: 0.7;
 }
 
 #header-index {
@@ -93,8 +93,121 @@ body {
 	margin-right: auto;
 }
 
-#header-index h1 {
-	width: 300px;
-	height: 55px;
-	background-color: red;
+#title {
+	width: 280px;
+	height: 103px;
+	float: left;
+}
+
+#title a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: url(../images/logo.png) center top;
+	text-indent: -9999px;
+}
+
+#nav {
+	float: left;
+	margin-top: 34px;
+	margin-left: 70px;
+}
+
+#nav .nav-list {
+	width: 90px;
+	height: 35px;
+	float: left;
+}
+
+.nav-list a {
+	width: 100%;
+	height: 100%;
+	text-indent: -9999px;
+	display: block;
+	background-image: url(../images/nav-content.png);
+}
+
+.nav-list ul {
+	display: none;
+}
+
+#nav-1 a {
+	background-position: -5px 0;
+}
+
+#nav-2 a {
+	background-position: -105px 0;
+}
+
+#nav-3 a {
+	background-position: -205px 0;
+}
+
+#nav-4 a {
+	background-position: -305px 0;
+}
+
+#nav-5 a {
+	background-position: -405px 0;
+}
+
+#nav-6 a {
+	background-position: -505px 0;
+}
+
+#nav-7 a {
+	background-position: -605px 0;
+}
+
+
+#nav-1 a:hover {
+	background-position: -5px -35px;
+}
+
+#nav-2 a:hover {
+	background-position: -105px -35px;
+}
+
+#nav-3 a:hover {
+	background-position: -205px -35px;
+}
+
+#nav-4 a:hover {
+	background-position: -305px -35px;
+}
+
+#nav-5 a:hover {
+	background-position: -405px -35px;
+}
+
+#nav-6 a:hover {
+	background-position: -505px -35px;
+}
+
+#nav-7 a:hover {
+	background-position: -605px -35px;
+}
+
+#quick-link {
+	position: absolute;
+	left: 975px;
+	top: 10px;
+}
+
+#quick-link li {
+	float: left;
+}
+
+#quick-link a, #quick-link span {
+	font-size: 12px;
+	color: #6c66b9;
+	text-decoration: none;
+}
+
+#quick-link span {
+	padding: 0 2px;
+}
+
+#quick-link a:hover {
+	color: #FFF;
 }
