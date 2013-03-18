@@ -69,9 +69,28 @@ legend {
 
 /* CSS Reset END */
 
-body {
-	background: url(../images/background_1.jpg) no-repeat top center;
+.bgstretcher-area { text-align: left; }
+.bgstretcher, .bgstretcher ul, .bgstretcher ul li {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
+.bgstretcher ul, .bgstretcher ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.bgstretcher {
+	background: black;
+	overflow: hidden;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	_position: absolute; /*IE6 doesn't support fixed positioning*/
+	top: 0;
+	left: 0;
+}
+
 
 #page-container {
 	margin-left: auto;
@@ -85,6 +104,7 @@ body {
 	filter:alpha(opacity=70);
 	-moz-opacity:0.7;
 	opacity: 0.7;
+
 }
 
 #header-index {
@@ -281,7 +301,7 @@ body {
 	float:left;
 	overflow: hidden;
 	position: relative;
-	cursor: hand;
+	cursor: pointer;
 	color: #7a72d8;
 	font-family: "黑体"; 
 	font-size: 14px; 

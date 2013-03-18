@@ -5,7 +5,8 @@
 <meta http-equiv="Content-Language" content="zh-CN" /> 
 <meta name="keywords" content="黑龙江科技学院">
 <link rel="stylesheet" rev="stylesheet" href="css/main.css" type="text/css" media="screen" />
-<script type="text/javascript" src="js/jquery.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/jquery-1.8.1.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/bgstretcher.js" charset="UTF-8"></script>
 <title>黑科技</title>
 </head>
 
@@ -201,9 +202,10 @@
 <script type="text/javascript">
 
 $(document).ready(function() {
+	//分页
 	jQuery.jqtab = function(tabtit,tab_conbox,move_type) {
 		$(tab_conbox).find("div").hide();
-		$(tabtit).find("li:first").addClass("thistab").show(); 
+		$(tabtit).find("li:first").addClass("thistab").show();
 		$(tab_conbox).find("div:first").show();
 	
 		$(tabtit).find("li").bind(move_type,function() {
@@ -214,9 +216,18 @@ $(document).ready(function() {
 		});
 	
 	};
-
 	$.jqtab("#con-left .tabs","#con-left #tab_conbox","click");
 	$.jqtab("#con-center .tabs","#con-center #tab_conbox","click");
+
+	//
+    $('BODY').bgStretcher({
+        images: ['images/background_1.jpg','images/background_2.jpg','images/background_3.jpg'],
+        imageWidth: 1366,
+        imageHeight: 898,
+        transitionEffect: 'fade',
+        sequenceMode: 'normal',
+        nextSlideDelay: '1500'
+	});
 	
 });
 </script>
