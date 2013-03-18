@@ -76,6 +76,7 @@ body {
 #page-container {
 	margin-left: auto;
 	margin-right: auto;
+	height: 680px;
 }
 
 #header {
@@ -210,4 +211,136 @@ body {
 
 #quick-link a:hover {
 	color: #FFF;
+}
+
+#content {
+	width: 100%;
+	height: 222px;
+	margin-left: auto;
+	margin-right: auto;
+	position: fixed;
+	bottom: 86px;
+	z-index: 10;
+}
+
+#content-inner {
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content-banner {
+	width: 100%;
+	height: 50px;
+	background-color: #650000;
+	position: fixed;
+	bottom: 80px;
+	z-index: 1;
+}
+
+.tabbox {
+	width:368px;
+	height: 222px;
+	float: left;
+	overflow:hidden;
+	border: 1px solid #000;
+}
+
+.tab_conbox{
+	height: 184px; 
+	background-color: #650000; 
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	opacity: 0.8;
+}
+
+.tab_conbox li { 
+	line-height: 25px;
+}
+
+.tab_conbox li a { 
+	color: #fff;
+}
+
+.tab_con{ 
+	display:none;
+}
+
+.tabs{
+	height: 38px;
+	width: 100%;
+	background-color: #000;
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	opacity: 0.8;
+}
+
+.tabs li{
+	height:38px;
+	line-height:38px;
+	float:left;
+	overflow: hidden;
+	position: relative;
+	cursor: hand;
+	color: #7a72d8;
+	font-family: "黑体"; 
+	font-size: 14px; 
+	padding-left:10px; 
+	padding-right: 10px;
+}
+
+.tabs .thistab,.tabs .thistab a:hover{
+	background: #3a3a3a;
+}
+
+.tab_con {
+	padding:12px;
+	font-size: 14px; 
+	line-height:175%;
+}
+
+#office-link {
+	width: 30px;
+	float: left;
+}
+
+#office-link li {
+	float: left;
+}
+
+#con-center {
+	margin: auto 30px;
+}
+
+#con-center li {
+
+}
+
+#footer {
+	height: 80px;
+	width: 100%;
+	clear: both;
+	margin-top: 6px;
+	background-color: #1a1a1a;
+	position: fixed;
+	bottom: 0;
+}
+#footer-inner {
+	width: 980px;
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer ul li {
+	margin-left: auto;
+	margin-right: auto;
+}
+#footer select {
+	margin-top: 20px;
+	margin-left: 24px;
+}
+#footer li, #footer a {
+    color: #999;
+    font-size: 12px;
 }
