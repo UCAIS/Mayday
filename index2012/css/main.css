@@ -274,9 +274,9 @@ html, body {
 .tab_conbox{
 	height: 184px; 
 	background-color: #650000; 
-	filter:alpha(opacity=80);
-	-moz-opacity:0.8;
-	opacity: 0.8;
+	filter:alpha(opacity=75);
+	-moz-opacity:0.75;
+	opacity: 0.75;
 }
 
 .tab_conbox li { 
@@ -285,6 +285,11 @@ html, body {
 
 .tab_conbox li a { 
 	color: #fff;
+	text-decoration: none;
+}
+
+.tab_conbox li a:hover {
+	text-decoration: underline;
 }
 
 .tabs{
