@@ -114,6 +114,7 @@ html, body {
 	height: 103px;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
 }
 
 #title {
@@ -213,7 +214,7 @@ html, body {
 
 #quick-link {
 	position: absolute;
-	left: 975px;
+	right: 16px;
 	top: 10px;
 	z-index: 10;
 }
