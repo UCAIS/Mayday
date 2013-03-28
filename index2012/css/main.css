@@ -264,6 +264,18 @@ html, body {
 	z-index: 1;
 }
 
+.tab_conbox h2 {
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.tab_conbox h2 a {
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: none;
+}
+
 .tabbox {
 	width:368px;
 	height: 222px;
@@ -289,7 +301,7 @@ html, body {
 	text-decoration: none;
 }
 
-.tab_conbox li a:hover {
+.tab_conbox li a:hover, .tab_conbox h2 a:hover {
 	text-decoration: underline;
 }
 
