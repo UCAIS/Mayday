@@ -1,5 +1,45 @@
  @charset "utf-8";
 /* CSS Document */
+/***********************************/
+/***********CSS reset***************/
+/***********************************/
+  /** 清除内外边距 **/
+ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+ dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+ pre, /* text formatting elements 文本格式元素 */
+ form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+ th, td /* table elements 表格元素 */ {
+     margin: 0;
+     padding: 0;
+  }
+ 
+  /** 设置默认字体 **/
+ body,
+ button, input, select, textarea /* for ie */ {
+     font: 12px/1.5 Georgia, Arial, Helvetica, sans-serif;
+  }
+ h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+ address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+ code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+ small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+ 
+  /** 重置列表元素 **/
+ ul, ol, li { list-style: none; }
+ 
+  /** 重置文本格式元素 **/
+ a { text-decoration: none; outline:none; }
+
+ sup { vertical-align: text-top; } /* 重置，减少对行高的影响 */
+ sub { vertical-align: text-bottom; }
+ 
+ /** 重置表单元素 **/
+ legend { color: #000; } /* for ie6 */
+ fieldset, img { border: 0; } /* img 搭车：让链接里的 img 无边框 */
+ button, input, select, textarea { font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */
+ /* 注：optgroup 无法扶正 */
+ 
+ /** 重置表格元素 **/
+ table { border-collapse: collapse; border-spacing: 0; }
 
 html, body{
 	margin: 0;
@@ -26,8 +66,9 @@ html, body{
 }
 
 #menu_bar{
-	float: left;
-	margin-left: 25%;
+	width: 600px;
+	height: 40px;
+	float: right;
 	margin-bottom: 0;
 	margin-top: 0;
 	padding: 0;
@@ -35,7 +76,8 @@ html, body{
 
 #search_bar{
 	float: left;
-	margin-top: -10px;
+	display: inline;
+	margin-top: 20px;
 	margin-left: 25px;
 	width: 203px;
 	height: 25px;
@@ -45,10 +87,11 @@ html, body{
 #menu ul.menutag{
 	list-style-type:none;
 	text-decoration: none;
-	width: 80px;
+	width: 120px;
 	height: 20px;
 	float: left;
-	margin:0;
+	display: inline;
+	margin: 0;
 	padding-top: 15px;
 }
 
@@ -56,6 +99,7 @@ html, body{
 	list-style-type:none;
 	text-decoration: none;
 	color:#593939;
+	width: 120px;
 }
 
 li.menutag_text a{
@@ -66,6 +110,7 @@ li.menutag_text a{
 	font-weight:bold;
 	margin: 0;
 	padding:0;
+	width: 120px;
 }
 
 li.menutag_text a:hover{
@@ -87,6 +132,7 @@ li.menutag_text a:hover{
 
 #slide-box{
 	float: left;
+	display: inline;
 	width: 700px;
 	height: 340px;
 	background-image: url(../images/news-photo.jpg);
@@ -99,6 +145,7 @@ li.menutag_text a:hover{
 	border-color: #ccb18e;
 }
 #sider-right{
+	display: inline;
 	width: 296px;
 	height: 340px;
 	background-color: #FFFBEE;
@@ -112,7 +159,7 @@ li.menutag_text a:hover{
 
 .photo_news{
 	color:#593939;
-	font-family: "微软雅黑";
+	font: "微软雅黑" 24px;
 	float: left;
 	margin-top:0px;
 	margin-left: 0px;
@@ -121,18 +168,20 @@ li.menutag_text a:hover{
 	border-color: #CCB18E;
 	height: 25px;
 	float: left;
+	display: inline;
 	padding: 10px;
 }
 #sider-right ul.photo_news-box{
-	margin-top: 0;
 	list-style-type: none;
 	text-decoration: none;
 	color:#CCB199;
 	width: 255px;
 	height: 20px;
 	float: left;
-	margin-left:-20px;
-	padding-top: 0px;
+	display: inline;
+	margin: 0px;
+	padding-top: 0;
+	padding-left: 20px;
 }
 
 #sider-rightu ul.week_hot_news-box a:hover{
@@ -173,6 +222,7 @@ li.week_hot_news-text{
 	border-bottom-style:solid;
 	border-color: #ccb18e;
 	float: left;
+	display: inline;
 	border-right-style: none;
 	border-top-style: none;
 	border-width: 1px;
@@ -184,47 +234,55 @@ ul#usth_news-box{
 	margin:0;
 	margin-right: 10px;
 	float: left;
+	display: inline;
 	padding: 0;
 }
 .usth_news-title{
 	font-family: "微软雅黑";
 	color:#593939;
-	font-size: 18px; 
+	font-size: 16px; 
 	border-left: solid;
 	border-width: 10px;
 	border-color: #CCB18E;
 	height: 25px;
 	float: left;
+	display: inline;
 	padding: 10px;
 }
 li.usth_news-text{
 	font-size: 12px;
 	float: left;
+	display: inline;
 }
 li.usth_news-text a{
-	width: 500px;
+	width: 470px;
 	text-decoration: none;
 	color:#AE8146;
 	font-size: 12px;
 	float: left;
+	display: inline;
 	margin-left: 20px;
 	line-height: 28px;
 }
 li.usth_news-text a:hover{
 	font-size: 12px;
 	float: left;
+	display: inline;
 	text-decoration: none;
 	color:#593939;
 }
 
 li.usth_news-more{
-	margin-top: 20px;
+	margin-top: -20px;
 	float: right;
+	display: inline;
 	margin-right: -30px;
 	color: red;
+	width: 450px;
 }
 li.usth_news-more a{
 	float: right;
+	display: inline;
 	color: red;
 	text-decoration: none;
 	color:#AE8146;
@@ -232,6 +290,7 @@ li.usth_news-more a{
 }
 li.usth_news-more a:hover{
 	float: right;
+	display: inline;
 	color: red;
 	font-size: 12px;
 	text-decoration: none;
@@ -244,32 +303,38 @@ ul#faculty_dynamic-box{
 	margin-left: 40px;
 	margin-right: 10px;
 	float: left;
+	display: inline;
 	padding: 0;
 }
 .faculty_dynamic-title{
 	font-family: "微软雅黑";
 	color:#593939;
-	font-size: 18px; 
+	font-size: 16px; 
 	border-left: solid;
 	border-width: 10px;
 	border-color: #CCB18E;
 	height: 25px;
 	float: left;
+	display: inline;
 	padding: 10px;
 }
 li.faculty_dynamic-text{
 	width: 480px;
 	font-size: 12px;
 	float: left;
+	display: inline;
 }
 li.faculty_dynamic-more{
-	margin-top: 20px;
-	float: right;
-	margin-right: -70px;
-	color: red;
+	margin-top: -20px;
+	float: left;
+	margin-right: 0px;
+	display: inline;
+	margin-bottom: 0;
+	width: 480px;
 }
 li.faculty_dynamic-more a{
 	float: right;
+	display: inline;
 	color: red;
 	text-decoration: none;
 	color:#AE8146;
@@ -277,6 +342,7 @@ li.faculty_dynamic-more a{
 }
 li.faculty_dynamic-more a:hover{
 	float: right;
+	display: inline;
 	color: red;
 	font-size: 12px;
 	text-decoration: none;
@@ -287,30 +353,36 @@ li.faculty_dynamic-text a{
 	color:#AE8146;
 	font-size: 12px;
 	float: left;
+	display: inline;
 	margin-left: 20px;
 	line-height: 28px;
 }
 li.faculty_dynamic-text a:hover{
 	font-size: 12px;
 	float: left;
+	display: inline;
 	text-decoration: none;
 	color:#593939;
 }
 .faculty_dynamic-date{
 	float: right;
+	display: inline;
 	font-size: 12px;
 	color:#593939;
-	margin-top:-21px;
-	margin-right: -70px;
+	margin-top:-22px;
+	margin-right: -80px;
 	padding: 0;
+	width: 40px;
 }
 .date{
 	float: right;
+	display: inline;
 	font-size: 12px;
 	color:#593939;
-	margin-top:-21px;
+	margin-top:-22px;
 	margin-right: -30px;
 	padding: 0;
+	width: 40px;
 }
 
 #content_area_2{
@@ -320,6 +392,7 @@ li.faculty_dynamic-text a:hover{
 	border-bottom-style:solid;
 	border-color: #ccb18e;
 	float: left;
+	display: inline;
 	border-right-style: none;
 	border-top-style: none;
 	border-width: 1px;
@@ -332,16 +405,18 @@ ul#usth_features-box{
 	margin:0;
 	padding: 0;
 	float: left;
+	display: inline;
 }
 .usth_features-title{
 	font-family: "微软雅黑";
 	color:#593939;
-	font-size: 18px; 
+	font-size: 16px; 
 	border-left: solid;
 	border-width: 10px;
 	border-color: #CCB18E;
 	height: 25px;
 	float: left;
+	display: inline;
 	padding: 10px;
 }
 
@@ -350,17 +425,21 @@ li.usth_features-text{
 	margin-top: 5px;
 	font-size: 12px;
 	float: left;
+	display: inline;
+	width: 200px;
 }
 li.usth_features-text a{
 	text-decoration: none;
 	color:#AE8146;
 	font-size: 12px;
 	float: left;
+	display: inline;
 	line-height: 20px;
 }
 li.usth_features-text a:hover{
 	font-size: 12px;
 	float: left;
+	display: inline;
 	text-decoration: none;
 	color:#593939;
 }
@@ -368,12 +447,13 @@ li.usth_features-text a:hover{
 .special_website-title{
 	font-family: "微软雅黑";
 	color:#593939;
-	font-size: 18px; 
+	font-size: 16px; 
 	border-left: solid;
 	border-width: 10px;
 	border-color: #CCB18E;
 	height: 25px;
 	float: left;
+	display: inline;
 	padding: 10px;
 }
 ul#special_website-box{
@@ -382,28 +462,34 @@ ul#special_website-box{
 	height: 230px;
 	margin:0;
 	float: left;
+	display: inline;
 	padding: 0;
 }
 li.special_website-text{
 	font-size: 12px;
 	float: left;
+	display: inline;
+	width: 200px;
 }
 li.special_website-text{
 	margin-left: 20px;
 	margin-top: 5px;
 	font-size: 12px;
 	float: left;
+	display: inline;
 }
 li.special_website-text a{
 	text-decoration: none;
 	color:#AE8146;
 	font-size: 12px;
 	float: left;
+	display: inline;
 	line-height: 20px;
 }
 li.special_website-text a:hover{
 	font-size: 12px;
 	float: left;
+	display: inline;
 	text-decoration: none;
 	color:#593939;
 }
@@ -414,39 +500,46 @@ ul#information_public-box{
 	height: 230px;
 	margin:0;
 	float: left;
+	display: inline;
 	padding: 0;
 }
 .information_public-title{
 	font-family: "微软雅黑";
 	color:#593939;
-	font-size: 18px; 
+	font-size: 16px; 
 	border-left: solid;
 	border-width: 10px;
 	border-color: #CCB18E;
 	height: 25px;
 	float: left;
+	display: inline;
 	padding: 10px;
 }
 li.information_public-text{
 	font-size: 12px;
 	float: left;
+	display: inline;
+	width: 200px;
 }
 li.information_public-text{
 	margin-left: 20px;
 	margin-top: 5px;
 	font-size: 12px;
 	float: left;
+	display: inline;
 }
 li.information_public-text a{
 	text-decoration: none;
 	color:#AE8146;
 	font-size: 12px;
 	float: left;
+	display: inline;
 	line-height: 20px;
 }
 li.information_public-text a:hover{
 	font-size: 12px;
 	float: left;
+	display: inline;
 	text-decoration: none;
 	color:#593939;
 }
@@ -458,6 +551,7 @@ li.information_public-text a:hover{
 	border-bottom-style:solid;
 	border-color: #ccb18e;
 	float: left;
+	display: inline;
 	border-right-style: none;
 	border-top-style: none;
 	border-width: 1px;
@@ -469,40 +563,46 @@ ul#information_notice-box{
 	height: 230px;
 	margin:0;
 	float: left;
+	display: inline;
 	padding: 0;
 }
 .information_notice-title{
 	font-family: "微软雅黑";
 	color:#593939;
-	font-size: 18px; 
+	font-size: 16px; 
 	border-left: solid;
 	border-width: 10px;
 	border-color: #CCB18E;
 	height: 25px;
 	float: left;
+	display: inline;
 	padding: 10px;
 }
 li.information_notice-text{
 	width: 500px;
 	font-size: 12px;
 	float: left;
+	display: inline;
 }
 li.information_notice-text{
 	margin-left: 20px;
 	margin-top: 5px;
 	font-size: 12px;
 	float: left;
+	display: inline;
 }
 li.information_notice-text a{
 	text-decoration: none;
 	color:#AE8146;
 	font-size: 12px;
 	float: left;
+	display: inline;
 	line-height: 20px;
 }
 li.information_notice-text a:hover{
 	font-size: 12px;
 	float: left;
+	display: inline;
 	text-decoration: none;
 	color: #593939;
 }
@@ -513,17 +613,19 @@ ul#usth_video-box{
 	height: 230px;
 	margin:0;
 	float: left;
+	display: inline;
 	padding: 0;
 }
 .usth_video-title{
 	font-family: "微软雅黑";
 	color:#593939;
-	font-size: 18px; 
+	font-size: 16px; 
 	border-left: solid;
 	border-width: 10px;
 	border-color: #CCB18E;
 	height: 25px;
 	float: left;
+	display: inline;
 	padding: 10px;
 }
 

@@ -3,15 +3,117 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="style/index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="script/jquery.min.js"></script>
+<script type="text/javascript" src="script/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="script/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="script/jquery.slideup.menu.1.0.min.js"></script>
+<script type="text/javascript" src="http://192.168.67.77/firebug-lite/firebug-lite/build/firebug-lite-debug.jss"></script>
+</script>
+<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if IE 6]>   
+   <script type="text/javascript" src="script/IE_png.js" ></script>
+   <script type="text/javascript">   
+   DD_belatedPNG.fix('#header,#menu'); 
+   </script>
+<style type="text/css"> 
+/* Clear Fix */
+
+.clearfix:after
+{
+content:".";
+display:block;
+
+height:0;
+clear:both;
+visibility:hidden;
+}
+.clearfix
+{
+display:inline-block;
+}
+/* Hide from IE Mac */
+.clearfix {display:block;}
+/* End hide from IE Mac */
+/* end of clearfix */
+
+#menu{
+	height: 50px;
+}
+
+#search_bar{
+	float: left;
+	display: inline;
+	margin-top: 25px;
+	margin-left: 25px;
+	width: 203px;
+	height: 25px;
+}
+li.week_hot_news-title{
+    margin-left:-15px;
+	width:247px;
+}
+
+li.week_hot_news-text{
+	text-decoration: none;
+	color:#AE8146;
+	font-size: 12px; 
+	margin: 0;
+	padding:0;
+	line-height: 18px;
+	text-indent: 1em;
+}
+#content_area_1{
+	width: 998px;
+}
+ul#faculty_dynamic-box{
+	margin:0;
+	padding:0;
+}
+ul#usth_news-box{
+	margin:0;
+	width:390px;
+}
+li.usth_news-more{
+	margin-top: -20px;
+	float: right;
+	display: inline;
+	margin-right:0;
+	width: 480px;
+}
+li.faculty_dynamic-more{
+	margin-top: -20px;
+	float: right;
+	margin-right: 0px;
+	color: red;
+	display: inline;
+	margin-bottom: 0px;
+}
+li.faculty_dynamic-text{
+	width:500px;
+}
+.faculty_dynamic-date{
+	float:left;
+	margin-left: 445px;
+	display: inline;
+	width:40px;
+}
+.date{
+	float:left;
+	margin-left: 445px;
+	display: inline;
+	width:40px;
+}
+</style>
+<![endif]-->
 </head>
 <title>黑龙江科技大学 | 新闻网</title>
 <body>
 	<div id="header" class="clearfix">
 	</div>
-	<div id="menu">
+	<div id="menu" class="clearfix">
 		<div id="menu_bar">
 			<ul class="menutag">
-				<li class="menutag_text"><a href="#">科大新闻</a></li>
+				<li class="menutag_text" ><a href="#">科大新闻</a></li>
 			</ul>
 			<ul class="menutag">
 				<li class="menutag_text"><a href="#">院系动态</a></li>
@@ -26,15 +128,15 @@
 				<li class="menutag_text"><a href="#">订阅</a></li>
 			</ul>
 		</div>
-		<div id="search_bar"></div>
+		<div id="search_bar" class="clearfix"></div>
 	</div>
-	<div id="content">
-		<div id="slide-box">
-			<div id="slider-warpper">
-				<div id="slider-bg">
-					<div id="slider-photos">
+	<div id="content" class="clearfix">
+		<div id="slide-box" class="clearfix">
+			<div id="slider-warpper" class="clearfix">
+				<div id="slider-bg" class="clearfix">
+					<div id="slider-photos" class="clearfix">
 						<div id="slides">
-							<div class="sliders_container">
+							<div class="sliders_container" class="clearfix">
 							</div>
 						</div>
 					</div>
@@ -94,7 +196,7 @@
 				<span class="faculty_dynamic-date">03-20</span>
 				<li class="faculty_dynamic-text"><a href="#">【工程训练与基础实验中心教学改革系列报道之一】与时俱进话改革…佚名</a></li>
 				<span class="faculty_dynamic-date">03-02</span>
-				<li class="faculty_dynamic-text"><a href="#">[图文]经济管理学院召开2012-2013学年第一学期寒假社会实践总结表…经管学院</a></li>
+				<li class="faculty_dynamic-text"><a href="#">[图文]经济管理学院召开2012-2013学年第一学期寒假社会实践总结表</a></li>
 				<span class="faculty_dynamic-date">03-19</span>
 				<li class="faculty_dynamic-text"><a href="#">[图文]我校2013年俄语专业八级测试圆满结束国教学院</a></li>
 				<span class="faculty_dynamic-date">03-19</span>
@@ -106,9 +208,9 @@
 				<span class="faculty_dynamic-date">03-21</span>
 				<li class="faculty_dynamic-text"><a href="#">[图文]建筑工程学院召开2013届毕业生就业推进会建工学院</a></li>
 				<span class="faculty_dynamic-date">03-20</span>
-				<li class="faculty_dynamic-text"><a href="#">【工程训练与基础实验中心教学改革系列报道之一】与时俱进话改革…佚名</a></li>
+				<li class="faculty_dynamic-text"><a href="#">【工程训练与基础实验中心教学改革系列报道之一】与时俱进话改革</a></li>
 				<span class="faculty_dynamic-date">03-21</span>
-				<li class="faculty_dynamic-text"><a href="#">[图文]经济管理学院召开2012-2013学年第一学期寒假社会实践总结表…经管学院</a></li>
+				<li class="faculty_dynamic-text"><a href="#">[图文]经济管理学院召开2012-2013学年第一学期寒假社会实践总结表</a></li>
 				<span class="faculty_dynamic-date">03-19</span>
 				<li class="faculty_dynamic-text"><a href="#">[图文]我校2013年俄语专业八级测试圆满结束国教学院</a></li>
 				<span class="faculty_dynamic-date">03-19</span>
