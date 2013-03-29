@@ -5,17 +5,18 @@
 <meta http-equiv="Content-Language" content="zh-CN" /> 
 <meta name="keywords" content="黑龙江科技学院">
 <link rel="stylesheet" rev="stylesheet" href="css/main.css" type="text/css" media="screen" />
+<link rel="stylesheet" rev="stylesheet" href="css/index2.css" type="text/css" media="screen" />
 <script type="text/javascript" src="js/jquery-1.8.1.min.js" charset="UTF-8"></script>
 <script type="text/javascript" src="js/bgstretcher.js" charset="UTF-8"></script>
 <title>黑科技</title>
 </head>
 
-<body>
-<div id="change-theme"><a href="/usth/index2012/index2.html">更换主题</a></div>
+<body id="index2">
+<div id="change-theme"><a href="/usth/index2012/index.html">更换主题</a></div>
 <div id="page-container">
 <div id="header">
 <div id="header-index">
-	<h1 id="title"><a href="http://www.usth.edu.cn">黑龙江科技学院</a></h1>
+    <h1 id="title"><a href="http://www.usth.edu.cn">黑龙江科技学院</a></h1>
     <ul id="nav">
         <li class="nav-list" id="nav-1">
             <a href="#">学校概况</a>
@@ -75,7 +76,7 @@
                 <li><a href="http://60.219.165.29:103/">工程训练与基础实验中心</a></li>
                 <li><a href="http://chengjiao.usth.net.cn/">鸡西校区</a></li>
                 <li><a href="http://chengjiao.usth.net.cn/">鹤岗校区</a></li>
- 				<li><a href="http://60.219.165.29:102/">哈尔滨煤矿机械研究所</a></li>
+                <li><a href="http://60.219.165.29:102/">哈尔滨煤矿机械研究所</a></li>
             </ul>
         </li>
         
@@ -91,12 +92,12 @@
         </li>
     </ul>
     <div id="quick-link">
-    	<ul>
-    		<li><a href="#">高考生</a><span>|</span></li>
-    		<li><a href="#">在校生</a><span>|</span></li>
-    		<li><a href="#">教职工</a><span>|</span></li>
-    		<li><a href="http://222.171.107.122/">校友会</a></li>
-    	</ul>
+        <ul>
+            <li><a href="#">高考生</a><span>|</span></li>
+            <li><a href="#">在校生</a><span>|</span></li>
+            <li><a href="#">教职工</a><span>|</span></li>
+            <li><a href="http://222.171.107.122/">校友会</a></li>
+        </ul>
     </div>
 
 </div><!-- #header-index end -->
@@ -108,7 +109,7 @@
 <div id="con-left" class="tabbox">
     <div class="tab_conbox">
         <div class="tab_con">
-		<h2><a href="#">热烈庆祝我校正式更名为黑龙江科技大学</a></h2>
+        <h2><a href="#">热烈庆祝我校正式更名为黑龙江科技大学</a></h2>
           <ul>
             <li><a href="#"><span>07-20</span>校党委书记宋有全面总结2012年暑期干部培训工作</a></li>
             <li><a href="#"><span>07-20</span>校长赵国刚为我校2012年暑期干部培训班做专题辅导报告</a></li>
@@ -170,22 +171,22 @@
 
 <div id="footer">
 <div id="footer-inner">
-	<ul id="footer-content">
+    <ul id="footer-content">
         <li>哈尔滨松北区糖厂街1号 P.C:150027&nbsp;&nbsp;<a href="http://www.miibeian.gov.cn/" target="_blank">黑ICP备05006845号</a>&nbsp;&nbsp;<a id="foot_href" href="mailto:WebMaster@USTH.edu.cn"></li>
         <li>Copyright © 2009&nbsp;&nbsp;<a title="信息网络中心" href="http://218.7.13.214:81/" target="_blank">黑龙江科技学院-信息网络中心</a></li>
-	</ul>
-	<div  id="office-link">
-		<ul>
-			<li id="office-system"><a href="#" title="办公系统">办公系统</a></li>
-			<li id="leader-mailbox"><a href="#" title="领导信箱">领导信箱</a></li>
-			<li id="partment-mailbox"><a href="#" title="部门意见箱">部门意见箱</a></li>
+    </ul>
+    <div  id="office-link">
+        <ul>
+            <li id="office-system"><a href="#" title="办公系统">办公系统</a></li>
+            <li id="leader-mailbox"><a href="#" title="领导信箱">领导信箱</a></li>
+            <li id="partment-mailbox"><a href="#" title="部门意见箱">部门意见箱</a></li>
             <li id="mail-system"><a href="#" title="邮件系统">邮件系统</a></li>
             <li id="usth-special"><a href="#" title="科大特色">科大特色</a></li>
             <li id="announce"><a href="#" title="公告信息">公告信息</a></li>
             <li id="topic-website"><a href="#" title="专题网站">专题网站</a></li>
-			<li id="info-leak"><a href="#" title="信息公开">信息公开</a></li>
-		</ul>
-	</div>
+            <li id="info-leak"><a href="#" title="信息公开">信息公开</a></li>
+        </ul>
+    </div>
 </div>
 </div><!-- #footer end -->
 
@@ -193,24 +194,24 @@
 <script type="text/javascript">
 
 $(document).ready(function() {
-	//分页
-	jQuery.jqtab = function(tabtit,tab_conbox,move_type) {
-		$(tab_conbox).find("div").hide();
-		$(tabtit).find("li:first").addClass("thistab").show();
-		$(tab_conbox).find("div:first").show();
-	
-		$(tabtit).find("li").bind(move_type,function() {
-		  $(this).addClass("thistab").siblings("li").removeClass("thistab");
-			var activeindex = $(tabtit).find("li").index(this);
-			$(tab_conbox).children().eq(activeindex).show().siblings().hide();
-			
-		});
-	
-	};
-	$.jqtab("#con-left .tabs","#con-left .tab_conbox","click");
-	$.jqtab("#con-center .tabs","#con-center .tab_conbox","click");
+    //分页
+    jQuery.jqtab = function(tabtit,tab_conbox,move_type) {
+        $(tab_conbox).find("div").hide();
+        $(tabtit).find("li:first").addClass("thistab").show();
+        $(tab_conbox).find("div:first").show();
+    
+        $(tabtit).find("li").bind(move_type,function() {
+          $(this).addClass("thistab").siblings("li").removeClass("thistab");
+            var activeindex = $(tabtit).find("li").index(this);
+            $(tab_conbox).children().eq(activeindex).show().siblings().hide();
+            
+        });
+    
+    };
+    $.jqtab("#con-left .tabs","#con-left .tab_conbox","click");
+    $.jqtab("#con-center .tabs","#con-center .tab_conbox","click");
 
-	//背景大图切换
+    //背景大图切换
     $('BODY').bgStretcher({
         images: ['images/background_1.jpg','images/background_2.jpg','images/background_3.jpg','images/background_4.jpg'],
         imageWidth: 1366,
@@ -218,8 +219,8 @@ $(document).ready(function() {
         transitionEffect: 'fade',
         sequenceMode: 'normal',
         nextSlideDelay: '5000'
-	});
-	
+    });
+    
 });
 </script>
 </body>

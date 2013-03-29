@@ -284,7 +284,7 @@ html, body {
 	border: 1px solid #000;
 }
 
-.tab_conbox{
+.tab_conbox {
 	height: 184px; 
 	background-color: #650000; 
 	filter:alpha(opacity=75);
@@ -350,11 +350,51 @@ html, body {
 #office-link {
 	margin-left: 50px;
 	width: 400px;
-	float: left;
+	height: 60px;
+	float: right;
 }
 
 #office-link li {
 	float: left;
+	width: 100px;
+	height: 30px;
+	background-image: url(../images/office-link.png);
+	background-repeat: no-repeat;
+}
+
+#office-link li a {
+	text-decoration: none;
+	font-size: 13px;
+	font-family: "黑体";
+	line-height: 30px;
+	height: 30px;
+	padding-left: 30px;
+	display: block;
+}
+
+#office-system {
+	background-position:0 -60px;
+}
+#leader-mailbox {
+	background-position:0 -240px;
+}
+#partment-mailbox {
+	background-position:0 -30px;
+}
+#mail-system {
+	background-position:0 0;
+}
+#usth-special {
+	background-position:0 -90px;
+}
+#announce {
+	background-position:0 -180px;
+}
+#topic-website {
+	background-position:0 -92px;
+}
+#info-leak {
+	background-position:0 -152px;
 }
 
 #con-center {
@@ -374,9 +414,16 @@ html, body {
 
 #footer-inner {
 	width: 980px;
-	padding-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#footer-content {
+	padding-top: 10px;
+}
+
+#footer-content li {
+	line-height: 18px;
 }
 
 #footer-inner ul {
@@ -394,4 +441,36 @@ html, body {
 #footer li, #footer a {
     color: #999;
     font-size: 12px;
+}
+
+#footer a {
+	text-decoration: none;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+}
+
+#index2 #content-banner {
+	background-color: #2e4576;
+}
+
+#index2 .tab_conbox {
+	background-color: #2e4576;
+}
+
+#index2 .tabs li {
+	/*color: #650000;*/
+}
+
+#change-theme {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	z-index: 100;
+}
+
+#change-theme a {
+	font-size: 12px;
+	color: #fff;
 }
