@@ -1,0 +1,3 @@
+[submodule "index-jason"]
+	path = index-jason
+	url = git://github.com/Jason-story/index.git
